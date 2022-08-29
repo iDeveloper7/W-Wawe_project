@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "Muller";
+  src: local("MullerBold"), local("Muller-Bold"), local("Muller_Bold"),
+  url("../fonts/MullerBold.woff2") format("woff2"),
+  url("../fonts/MullerBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: local("MullerLightItalic"), local("Muller_Light_Italic"), local("Muller-Light-Italic"),
+  url("../fonts/MullerLightItalic.woff2") format("woff2"),
+  url("../fonts/MullerLightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: local("MullerMedium"), local("Muller-Medium"), local("Muller_Medium"),
+  url("../fonts/MullerMedium.woff2") format("woff2"),
+  url("../fonts/MullerMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: local("MullerRegular"), local("Muller-Regular"), local("Muller_Regular"),
+  url("../fonts/MullerRegular.woff2") format("woff2"),
+  url("../fonts/MullerRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: local("MullerRegularItalic"), local("Muller-Regular-Italic"), local("Muller_Regular_Italic"),
+  url("../fonts/MullerRegularItalic.woff2") format("woff2"),
+  url("../fonts/MullerRegularItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: local("OpenSans-Regular"), local("OpenSans_Regular"), local("Open-Sans-Regular"),
+  url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+  url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+}
+
+/*global*/
+
+.flex {
+  display: flex;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+:root {
+  --font400_20_20: 400 20px / 20px "Muller", sans-serif;
+  --font400_16_16: 400 16px / 16px "Muller", sans-serif;
+}
+
+.section-title {
+  font: 400 48px / 100% "Muller", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+  max-width: 1140px;
+}
+
+.section-offset {
+  padding: 94px 0;
+}
+
+/*header*/
+
+.header__top-wrap {
+  display: none;
+}
+

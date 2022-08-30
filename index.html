@@ -12,22 +12,24 @@
 </head>
 <body>
 <header class="header">
-  <div class="container header__container">
-    <div class="header__top-wrap">
-      <a href="#" class="header__logo-link">
+  <section class="header-top">
+    <div class="container header-top__container">
+      <a href="#" class="header-top__logo-link">
         <img src="img/logo.svg" alt="Логотип Радио W-Wawe">
       </a>
 
-      <button class="header__login-btn">Вход</button>
+      <button class="header-top__login-btn">Вход</button>
     </div>
+  </section>
 
-    <div class="header__center-wrap">
-      <a href="#" class="header__logo-link">
-        <img src="img/logo.svg" alt="Логотип Радио W-Wawe">
+  <section class="header-center">
+    <div class="container header-center__container flex">
+      <a href="#" class="header-center__logo-link">
+        <img class="header-center__logo-img" src="img/logo.svg" alt="Логотип Радио W-Wawe">
       </a>
 
-      <nav class="header__top-nav nav">
-        <ul class="nav__top-list list-reset">
+      <nav class="header-center__top-nav nav">
+        <ul class="nav__top-list flex list-reset">
           <li class="nav__top-item">
             <a href="#podcasts" class="nav__top-link">Подкасты</a>
           </li>
@@ -45,26 +47,28 @@
           </li>
 
           <li class="nav__top-item">
-            <a href="#about" class="nav__top-link">О нас</a>
+            <a href="#about" class="nav__top-link">О&nbsp;нас</a>
           </li>
         </ul>
       </nav>
 
-      <div class="header__btns-wrap">
-        <button class="header__search-btn btn">
+      <div class="header-center__btns-wrap flex">
+        <button class="header-center__search-btn">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M20.9999 21L16.6499 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </button>
 
-        <button class="header__login-btn">Вход</button>
+        <button class="header-center__login-btn">Вход</button>
       </div>
     </div>
+  </section>
 
-    <div class="header__bottom-wrap">
-      <nav class="header__bottom-nav nav">
-        <ul class="nav__bottom-list">
+  <section class="header-bottom">
+    <div class="container header-bottom__container flex">
+      <nav class="header-bottom__nav nav">
+        <ul class="nav__bottom-list flex list-reset">
           <li class="nav__bottom-item">
             <a href="#" class="nav__bottom-link">Новости</a>
           </li>
@@ -91,9 +95,9 @@
         </ul>
       </nav>
 
-      <div class="header__broadcast">
-        <div class="header__broadcast-left">
-          <div class="play-icon">
+      <div class="header-bottom__broadcast flex">
+        <div class="header-bottom__broadcast-left flex">
+          <div class="play-icon play-icon_desc">
             <button class="play-icon__btn">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z" fill="#A1A6B4"/>
@@ -101,15 +105,15 @@
             </button>
           </div>
 
-          <div class="header__broadcast-text-wrap">
-            <span class="header__broadcast-top-text">Ранее в эфире</span>
+          <div class="header-bottom__broadcast-text-wrap flex">
+            <span class="header-bottom__broadcast-top-text">Ранее&nbsp;в&nbsp;эфире</span>
 
-            <span class="header__broadcast-bottom-text">"Музыка"</span>
+            <span class="header-bottom__broadcast-bottom-text">«Музыка»</span>
           </div>
         </div>
 
-        <div class="header__broadcast-right">
-          <div class="play-icon">
+        <div class="header-bottom__broadcast-right flex">
+          <div class="play-icon play-icon_desc">
             <button class="play-icon__btn">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z" fill="#A1A6B4"/>
@@ -117,21 +121,21 @@
             </button>
           </div>
 
-          <div class="header__broadcast-text-wrap">
-            <span class="header__broadcast-top-text">Сейчас в эфире</span>
+          <div class="header-bottom__broadcast-text-wrap flex">
+            <span class="header-bottom__broadcast-top-text">Сейчас&nbsp;в&nbsp;эфире</span>
 
-            <span class="header__broadcast-bottom-text">"Как так?"</span>
+            <span class="header-bottom__broadcast-bottom-text">«Как&nbsp;так?»</span>
           </div>
         </div>
       </div>
 
-      <div class="header__age-wrap age">
-        <div class="age__circle">
+      <div class="header-bottom__age-wrap age flex">
+        <div class="age__circle flex">
           <span class="age__text">12+</span>
         </div>
       </div>
 
-      <div class="play-icon">
+      <div class="play-icon play-icon_768">
         <button class="play-icon__btn">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z" fill="#A1A6B4"/>
@@ -139,7 +143,7 @@
         </button>
       </div>
 
-      <div class="header__on-airth on-airth">
+      <div class="header-bottom__on-airth on-airth">
         <button class="on-airth__bth">
           <div class="on-airth__img-wrap">
             <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -153,11 +157,11 @@
         </button>
       </div>
     </div>
-  </div>
+  </section>
 </header>
 <main class="main">
   <section class="hero section-offset">
-    <div class="container hero__container">
+    <div class="container hero__container flex">
       <div class="hero__left-wrap">
         <h1 class="hero__title">Радио <span class="hero__title_ital">W-Wawe</span></h1>
 
@@ -168,15 +172,11 @@
         <button class="hero__btn btn">Слушать эфир</button>
       </div>
 
-      <div class="hero__right-wrap">
-        <div class="hero__circle-wrap">
-          <div class="hero__circle"></div>
-          <div class="hero__circle"></div>
-          <div class="hero__circle"></div>
-        </div>
-
-        <img src="img/mic_big.png" alt="Микрофон">
-      </div>
+      <picture class="hero__picture">
+        <source media="(max-width: 1200px)" srcset="img/microphone-1024.png">
+        <source media="(min-width: 1201px)" srcset="img/microphone-desc.png">
+        <img class="hero__img" src="img/microphone-desc.png" alt="Микрофон">
+      </picture>
     </div>
   </section>
 

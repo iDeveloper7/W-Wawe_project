@@ -426,10 +426,12 @@ a {
 .play-btn {
   padding: 0;
   border: none;
+  border-radius: 100%;
   outline: none;
   background-color: transparent;
   cursor: pointer;
   font-size: 0;
+  overflow: hidden;
 }
 
 .podcasts__more-btn {
@@ -445,9 +447,15 @@ a {
 }
 
 /*broadcasts*/
+.broadcasts__container {
+  justify-content: space-between;
+}
 
+/*broadcasts__left-wrap*/
 .broadcasts__left-wrap {
   width: calc((100% - 3 * 30px) / 4);
+  /*margin-right: 30px;*/
+  /*width: 25%;*/
 }
 
 .broadcasts__top-left {
@@ -469,35 +477,99 @@ a {
 
 .broadcasts__select {
   width: 100%;
+  font: var(--font400_16_16);
+  color: #121723;
+}
+
+.broadcasts__option {
+  font: var(--font400_16_16);
+  color: #A1A6B4;
 }
 
 .broadcasts__bottom-left {
   flex-direction: column;
 }
 
-.broadcasts__picture {
+.broadcasts__left-picture {
   margin-bottom: 24px;
 }
 
 .broadcasts__archive-link {
-  position: relative;
-  display: block;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 12px;
-  padding-left: 20px;
+  min-width: 110px;
   max-width: 160px;
   width: 100%;
   height: 40px;
-  /*padding-top: 12px;*/
-  /*padding-bottom: 12px;*/
   border: 2px solid #121723;
   border-radius: 77px;
-  /*text-align: center;*/
-  color: #121723;
-  font: var(--font500_16_16);
-  background: url("../img/archive-btn-icon.svg") center center no-repeat;
 }
 
+.broadcasts__archive-icon {
+  margin-right: 5px;
+}
 
+.broadcasts__archive-span {
+  color: #121723;
+  font: var(--font500_16_16);
+}
+
+.broadcasts__descr {
+  font: 400 16px / 150% "Muller", sans-serif;
+  color: #A1A6B4;
+}
+
+/*broadcasts__right-wrap*/
+.broadcasts__right-wrap {
+  width: calc((100% - 30px) - ((100% - 3 * 30px) / 4));
+}
+
+.broadcasts__list {
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding-top: 13px;
+}
+
+.broadcasts__item {
+  width: calc((100% - 2 * 30px) / 3);
+  margin-bottom: 30px;
+}
+
+.broadcasts__article {
+  width: 100%;
+  font-size: 0;
+}
+
+.broadcasts__article-bottom-wrap {
+  flex-direction: column;
+  padding: 20px 16px;
+  border: 1px solid #E6E8EC;
+}
+
+.broadcasts__name {
+  align-self: flex-start;
+  margin: 0 0 4px;
+  color: #121723;
+}
+
+.broadcasts__time {
+  align-self: flex-start;
+  margin: 0 0 20px;
+  font: 400 12px / 12px "Muller";
+  color: #A1A6B4;
+}
+
+.broadcasts__more-link {
+  align-self: flex-start;
+  padding-right: 24px;
+  font: var(--font400_16_16);
+  font-style: italic;
+  color: #121723;
+  background: url("../img/broadcasts Arrow 1.svg") right center no-repeat;
+}
+
+/*broadcasts__footer*/
 .broadcasts__footer {
   display: none;
 }

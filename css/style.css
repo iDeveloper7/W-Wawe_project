@@ -454,8 +454,6 @@ a {
 /*broadcasts__left-wrap*/
 .broadcasts__left-wrap {
   width: calc((100% - 3 * 30px) / 4);
-  /*margin-right: 30px;*/
-  /*width: 25%;*/
 }
 
 .broadcasts__top-left {
@@ -470,15 +468,91 @@ a {
 }
 
 .broadcasts__author {
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   font: var(--font400_16_16);
   color: #A1A6B4;
 }
 
-.broadcasts__select {
+/*broadcasts select*/
+.choices {
   width: 100%;
+}
+
+.choices__item:not(:last-child) {
+  border-bottom: 1px solid #D2D5DD;;
+}
+
+.is-open .choices__list--dropdown, .is-open .choices__list[aria-expanded] {
+  border-top: none;
+  border-left: 1px solid #D2D5DD;
+  border-right: 1px solid #D2D5DD;
+  border-bottom: 1px solid #D2D5DD;
+  border-radius: 0 0 10px 10px;
+}
+
+.choices[data-type*=select-one] .choices__inner {
+  padding-bottom: 12px;
+}
+
+.choices[data-type*=select-one]::after {
+  top: 45%;
+  width: 13px;
+  height: 9px;
+  border: none;
+  background: url("../img/select-arrow-close.svg") right center / cover no-repeat;
+}
+
+.choices[data-type*=select-one].is-open::after {
+  margin-top: -3px;
+  width: 13px;
+  height: 9px;
+  border: none;
+  background: url("../img/select-arrow-open.svg") right center / cover no-repeat;
+}
+
+.choices__inner {
+  min-height: auto;
+  border: none;
+  border-radius: 10px;
   font: var(--font400_16_16);
+  background-color: #E6E8EC;
+}
+
+.is-open .choices__inner {
+  position: relative;
+  border-radius: 10px;
+  overflow: visible;
+}
+
+.is-open .choices__inner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-top: 1px solid #D2D5DD;
+  border-left: 1px solid #D2D5DD;
+  border-right: 1px solid #D2D5DD;
+  border-radius: 10px 10px 0 0;
+}
+
+.choices__inner,
+.choices__list--dropdown .choices__item, .choices__list[aria-expanded] .choices__item {
+  padding: 12px;
+  font: var(--font400_16_16);
+}
+
+.choices__list--single .choices__item {
   color: #121723;
+}
+
+.choices__list--single {
+  padding: 0;
+}
+
+.choices__list--dropdown {
+  color: #A1A6B4;
 }
 
 .broadcasts__option {
@@ -491,7 +565,7 @@ a {
 }
 
 .broadcasts__left-picture {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .broadcasts__archive-link {

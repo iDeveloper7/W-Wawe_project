@@ -9,6 +9,7 @@
   <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.2/dist/accordion.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -851,14 +852,14 @@
         </p>
       </div>
 
-      <div class="guests__content-wrap">
-        <ul class="guests__accordion accordion">
+      <div class="guests__content-wrap flex">
+        <ul class="guests__accordion accordion list-reset">
           <li class="accordion__item">
             <h3 class="accordion__title subtitle">
-              <button class="accordion__btn">
+              <button class="accordion__btn flex" data-btnpath="one" aria-expanded="true">
                 <span class="accordion__btn-text">Блогеры</span>
 
-                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="accordion__btn-img" data-btntarget="one" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2"/>
                   <path d="M13 19L21 27L29 19" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
                 </svg>
@@ -866,65 +867,65 @@
             </h3>
 
             <div class="accordion__panel">
-              <ul class="accordion__panel-list">
+              <ul class="accordion__panel-list list-reset" data-ultarget="one">
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn" data-path="sergeyDenisov">Сергей Денисов</button>
+                  <button class="accordion__panel-btn" data-path="noname">Сергей Денисов</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn" data-path="matveyMechnikov">Матвей Мечников</button>
+                  <button class="accordion__panel-btn" data-path="noname">Матвей Мечников</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn" data-path="konstantinPrusino">Константин Прусино</button>
+                  <button class="accordion__panel-btn" data-path="noname">Константин Прусино</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn" data-path="ivanKalitnikov">Иван Калитников</button>
+                  <button class="accordion__panel-btn" data-path="noname">Иван Калитников</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn" data-path="evgeniyVoynovsky">Евгений Войновский</button>
+                  <button class="accordion__panel-btn" data-path="noname">Евгений Войновский</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn" data-path="olgaMartynova">Ольга Мартынова</button>
+                  <button class="accordion__panel-btn accordion__panel-btn_active" data-path="olgaMartynova">Ольга Мартынова</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn" data-path="dmitriyMikhalok">Дмитрий Михалок</button>
+                  <button class="accordion__panel-btn" data-path="noname">Дмитрий Михалок</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn" data-path="petrPiotrovsky">Пётр Пиотровский</button>
+                  <button class="accordion__panel-btn" data-path="noname">Пётр Пиотровский</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn" data-path="olegSviridovsky">Олег Свиридовский</button>
+                  <button class="accordion__panel-btn" data-path="noname">Олег Свиридовский</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn" data-path="vladislavKaupers">Владислав Кауперс</button>
+                  <button class="accordion__panel-btn" data-path="noname">Владислав Кауперс</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn" data-path="mikhailPozhitnikov">Михаил Пожитников</button>
+                  <button class="accordion__panel-btn" data-path="noname">Михаил Пожитников</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn" data-path="georgyPoluyan">Георгий Полуян</button>
+                  <button class="accordion__panel-btn" data-path="noname">Георгий Полуян</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn" data-path="denisTelman">Денис Тельман</button>
+                  <button class="accordion__panel-btn" data-path="noname">Денис Тельман</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn" data-path="uryGorin">Юрий Горин</button>
+                  <button class="accordion__panel-btn" data-path="noname">Юрий Горин</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn" data-path="maximSergeev">Максим Сергеев</button>
+                  <button class="accordion__panel-btn" data-path="noname">Максим Сергеев</button>
                 </li>
               </ul>
             </div>
@@ -932,10 +933,10 @@
 
           <li class="accordion__item">
             <h3 class="accordion__title subtitle">
-              <button class="accordion__btn">
+              <button class="accordion__btn flex" data-btnpath="two">
                 <span class="accordion__btn-text">Арт-критики</span>
 
-                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="accordion__btn-img" data-btntarget="two" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2"/>
                   <path d="M13 19L21 27L29 19" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
                 </svg>
@@ -943,7 +944,7 @@
             </h3>
 
             <div class="accordion__panel">
-              <ul class="accordion__panel-list">
+              <ul class="accordion__panel-list list-reset" data-ultarget="two">
                 <li class="accordion__panel-item">
                   <button class="accordion__panel-btn">Максим Чебанов</button>
                 </li>
@@ -1009,10 +1010,10 @@
 
           <li class="accordion__item">
             <h3 class="accordion__title subtitle">
-              <button class="accordion__btn">
+              <button class="accordion__btn flex" data-btnpath="three">
                 <span class="accordion__btn-text">Художники</span>
 
-                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="accordion__btn-img" data-btntarget="three" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2"/>
                   <path d="M13 19L21 27L29 19" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
                 </svg>
@@ -1020,7 +1021,7 @@
             </h3>
 
             <div class="accordion__panel">
-              <ul class="accordion__panel-list">
+              <ul class="accordion__panel-list list-reset" data-ultarget="three">
                 <li class="accordion__panel-item">
                   <button class="accordion__panel-btn">Юрий Воронин</button>
                 </li>
@@ -1086,10 +1087,10 @@
 
           <li class="accordion__item">
             <h3 class="accordion__title subtitle">
-              <button class="accordion__btn">
+              <button class="accordion__btn flex" data-btnpath="four">
                 <span class="accordion__btn-text">Люди науки</span>
 
-                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="accordion__btn-img" data-btntarget="four" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2"/>
                   <path d="M13 19L21 27L29 19" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
                 </svg>
@@ -1097,7 +1098,7 @@
             </h3>
 
             <div class="accordion__panel">
-              <ul class="accordion__panel-list">
+              <ul class="accordion__panel-list list-reset" data-ultarget="four">
                 <li class="accordion__panel-item">
                   <button class="accordion__panel-btn">Анна Трофимова</button>
                 </li>
@@ -1163,10 +1164,10 @@
 
           <li class="accordion__item">
             <h3 class="accordion__title subtitle">
-              <button class="accordion__btn">
+              <button class="accordion__btn flex" data-btnpath="five">
                 <span class="accordion__btn-text">Историки</span>
 
-                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="accordion__btn-img" data-btntarget="five" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2"/>
                   <path d="M13 19L21 27L29 19" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
                 </svg>
@@ -1174,7 +1175,7 @@
             </h3>
 
             <div class="accordion__panel">
-              <ul class="accordion__panel-list">
+              <ul class="accordion__panel-list list-reset" data-ultarget="five">
                 <li class="accordion__panel-item">
                   <button class="accordion__panel-btn">Лев Соколов</button>
                 </li>
@@ -1216,7 +1217,7 @@
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Владислава Шапошникова</button>
+                  <button class="accordion__panel-btn">Егор Кружкин</button>
                 </li>
 
                 <li class="accordion__panel-item">
@@ -1240,10 +1241,10 @@
 
           <li class="accordion__item">
             <h3 class="accordion__title subtitle">
-              <button class="accordion__btn">
+              <button class="accordion__btn flex" data-btnpath="six">
                 <span class="accordion__btn-text">Филологи</span>
 
-                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="accordion__btn-img" data-btntarget="six" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2"/>
                   <path d="M13 19L21 27L29 19" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
                 </svg>
@@ -1251,7 +1252,7 @@
             </h3>
 
             <div class="accordion__panel">
-              <ul class="accordion__panel-list">
+              <ul class="accordion__panel-list list-reset" data-ultarget="six">
                 <li class="accordion__panel-item">
                   <button class="accordion__panel-btn">Виктория Козлова</button>
                 </li>
@@ -1261,7 +1262,7 @@
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Александра Морозова</button>
+                  <button class="accordion__panel-btn">Мария Захарова</button>
                 </li>
 
                 <li class="accordion__panel-item">
@@ -1316,7 +1317,7 @@
           </li>
         </ul>
 
-        <div class="guests__shut">
+        <div class="guests__person" data-target="noname">
           <picture class="guests__shut-picture">
             <source media="(max-width: 767px)" srcset="img/shut-320.jpg">
             <source media="(max-width: 1023px)" srcset="img/shut-768.jpg">
@@ -1326,7 +1327,7 @@
           </picture>
         </div>
 
-        <div class="guests__person" data-target="olgaMartynova">
+        <div class="guests__person guests__person_active" data-target="olgaMartynova">
           <picture class="guests__person-pict">
             <source media="(max-width: 767px)" srcset="img/olga-martynova-320.jpg">
             <source media="(max-width: 1023px)" srcset="img/olga-martynova-768.jpg">
@@ -1335,7 +1336,7 @@
             <img src="img/olga-martynova-desc.jpg" alt="Ольга Мартынова">
           </picture>
 
-          <ul class="guests__social">
+          <ul class="guests__social flex list-reset">
             <li class="guests__social-item">
               <a class="guests__social-link" href="https://instagram.com/">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1885,6 +1886,7 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+<script src="https://unpkg.com/accordion-js@3.3.2/dist/accordion.min.js"></script>
 <script src="index.js"></script>
 </body>
 </html>

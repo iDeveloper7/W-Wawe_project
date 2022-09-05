@@ -590,6 +590,7 @@ a {
 }
 
 .broadcasts__descr {
+  margin: 0;
   font: 400 16px / 150% "Muller", sans-serif;
   color: #A1A6B4;
 }
@@ -602,6 +603,7 @@ a {
 .broadcasts__list {
   flex-flow: row wrap;
   justify-content: space-between;
+  margin-bottom: -30px;
   padding-top: 13px;
 }
 
@@ -646,4 +648,153 @@ a {
 /*broadcasts__footer*/
 .broadcasts__footer {
   display: none;
+}
+
+/*guests*/
+.guests {
+  background-color: #121723;
+}
+
+/*guests__header*/
+.guests__header {
+  margin-bottom: 50px;
+  max-width: 825px;
+  width: 100%;
+}
+
+.guests__title {
+  margin: 0 0 12px;
+  color: #fff;
+}
+
+.guests__have {
+  display: block;
+  margin: 0 0 8px;
+  font: 700 20px / 150% "Muller", sans-serif;
+  color: #A1A6B4;
+}
+
+.guests__header-descr {
+  margin: 0;
+  font: 400 20px / 160% "Muller", sans-serif;
+  color: #A1A6B4;
+}
+
+/*guests__content*/
+.guests__accordion {
+  margin-right: 30px;
+}
+
+.accordion {
+  max-width: 730px;
+  width: 100%;
+}
+
+.accordion__item {
+  width: 100%;
+}
+
+.accordion__title {
+  margin: 0;
+}
+
+.accordion__btn {
+  justify-content: space-between;
+  align-items: center;
+  padding: 23px 0;
+  width: 100%;
+  border-top: 1px solid #A1A6B4;
+  border-bottom: 1px solid #A1A6B4;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.accordion__btn-text {
+  font-weight: 500;
+  color: #fff;
+}
+
+.accordion__btn-img {
+  transition: transform 0.4s ease-in-out;
+}
+
+.accordion__btn-img_active {
+  transform: rotate(180deg);
+}
+
+.accordion__panel {
+  overflow: hidden;
+}
+
+.accordion__panel_active {
+  padding: 30px 0;
+}
+
+.accordion__panel-list {
+  margin-bottom: -15px;
+  column-count: 4;
+}
+
+.accordion__panel-list_active {
+  padding: 25px 0;
+}
+
+.accordion__panel-btn {
+  margin-bottom: 15px;
+  padding: 0;
+  border: none;
+  font: var(--font400_16_16);
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.accordion__panel-btn_active {
+  color: #AA9DFA;
+}
+/*guests__person*/
+
+.guests__person {
+  display: none;
+  max-width: 350px;
+  width: 100%;
+}
+
+.guests__person_active {
+  display: block;
+}
+
+.guests__person-pict img {
+  margin-bottom: 8px;
+}
+
+.guests__social {
+  margin-bottom: 6px;
+}
+
+.guests__social-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.guest__person-name {
+  margin: 0 0 8px;
+  font: var(--font500_20_20);
+  color: #fff;
+}
+
+.guest__person-descr {
+  margin: 0 0 40px;
+  font: 400 16px / 180% "Muller", sans-serif;
+  color: #A1A6B4;
+}
+
+.guest__person-link {
+  padding: 10px 19px;
+  border: 2px solid #AA9DFA;
+  border-radius: 77px;
+  font: var(--font500_16_16);
+  text-align: center;
+  color: #AA9DFA;
 }

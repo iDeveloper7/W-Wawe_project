@@ -854,9 +854,9 @@
 
       <div class="guests__content-wrap flex">
         <ul class="guests__accordion accordion list-reset">
-          <li class="accordion__item">
+          <li class="accordion__item js-enabled accordion__panel">
             <h3 class="accordion__title subtitle">
-              <button class="accordion__btn flex" data-btnpath="one" aria-expanded="true">
+              <button class="accordion__btn flex" data-btnpath="one">
                 <span class="accordion__btn-text">Блогеры</span>
 
                 <svg class="accordion__btn-img" data-btntarget="one" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -867,7 +867,7 @@
             </h3>
 
             <div class="accordion__panel">
-              <ul class="accordion__panel-list list-reset" data-ultarget="one">
+              <ul class="accordion__panel-list list-reset accordion__panel-list_active" data-ultarget="one" style="transition-duration: 600ms; height: auto;">
                 <li class="accordion__panel-item">
                   <button class="accordion__panel-btn" data-path="noname">Сергей Денисов</button>
                 </li>
@@ -946,63 +946,59 @@
             <div class="accordion__panel">
               <ul class="accordion__panel-list list-reset" data-ultarget="two">
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Максим Чебанов</button>
+                  <button class="accordion__panel-btn" data-path="noname">Максим Чебанов</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Кирилл Богомолов</button>
+                  <button class="accordion__panel-btn" data-path="kirillBogomolov">Кирилл Богомолов</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Русик Бреславский</button>
+                  <button class="accordion__panel-btn" data-path="noname">Дмитрий Фадеев</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Владимир Кабанов</button>
+                  <button class="accordion__panel-btn" data-path="noname">Владимир Кабанов</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Артём Агутин</button>
+                  <button class="accordion__panel-btn" data-path="noname">Артём Агутин</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Жанна Сысоева</button>
+                  <button class="accordion__panel-btn" data-path="noname">Жанна Сысоева</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Екатерина Веселова</button>
+                  <button class="accordion__panel-btn" data-path="noname">Екатерина Веселова</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Станислав Зуев</button>
+                  <button class="accordion__panel-btn" data-path="noname">Станислав Зуев</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Иван Колесников</button>
+                  <button class="accordion__panel-btn" data-path="noname">Иван Колесников</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Александр Марковец</button>
+                  <button class="accordion__panel-btn" data-path="noname">Александр Марковец</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Владимир Шохин</button>
+                  <button class="accordion__panel-btn" data-path="noname">Денис Бреславский</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Денис Бреславский</button>
+                  <button class="accordion__panel-btn" data-path="noname">Рустам Шахобидинов</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Рустам Шахобидинов</button>
+                  <button class="accordion__panel-btn" data-path="noname">Никита Чумаков</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Никита Чумаков</button>
-                </li>
-
-                <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Станислав Кирдяпкин</button>
+                  <button class="accordion__panel-btn" data-path="noname">Станислав Кирдяпкин</button>
                 </li>
               </ul>
             </div>
@@ -1023,63 +1019,63 @@
             <div class="accordion__panel">
               <ul class="accordion__panel-list list-reset" data-ultarget="three">
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Юрий Воронин</button>
+                  <button class="accordion__panel-btn" data-path="noname">Юрий Воронин</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Алина Воронова</button>
+                  <button class="accordion__panel-btn" data-path="noname">Алина Воронова</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Арсений Плотников</button>
+                  <button class="accordion__panel-btn" data-path="noname">Арсений Плотников</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Фёдор Федоров</button>
+                  <button class="accordion__panel-btn" data-path="noname">Фёдор Федоров</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Екатерина Денисова</button>
+                  <button class="accordion__panel-btn" data-path="noname">Екатерина Денисова</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Кристина Титова</button>
+                  <button class="accordion__panel-btn" data-path="noname">Кристина Титова</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Ксения Кондратьева</button>
+                  <button class="accordion__panel-btn" data-path="noname">Ксения Кондратьева</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Александр Горбунов</button>
+                  <button class="accordion__panel-btn" data-path="noname">Александр Горбунов</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Николай Чижов</button>
+                  <button class="accordion__panel-btn" data-path="noname">Николай Чижов</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Кирилл Поляков</button>
+                  <button class="accordion__panel-btn" data-path="noname">Кирилл Поляков</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Евгения Беляева</button>
+                  <button class="accordion__panel-btn" data-path="noname">Евгения Беляева</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Татьяна Сидорова</button>
+                  <button class="accordion__panel-btn" data-path="noname">Татьяна Сидорова</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Александра Иванова</button>
+                  <button class="accordion__panel-btn" data-path="noname">Александра Иванова</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Евгения Филиппова</button>
+                  <button class="accordion__panel-btn" data-path="noname">Евгения Филиппова</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Евгений Афанасьев</button>
+                  <button class="accordion__panel-btn" data-path="noname">Евгений Афанасьев</button>
                 </li>
               </ul>
             </div>
@@ -1100,63 +1096,63 @@
             <div class="accordion__panel">
               <ul class="accordion__panel-list list-reset" data-ultarget="four">
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Анна Трофимова</button>
+                  <button class="accordion__panel-btn" data-path="noname">Анна Трофимова</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Иван Поздняков</button>
+                  <button class="accordion__panel-btn" data-path="noname">Иван Поздняков</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Давид Гуляев</button>
+                  <button class="accordion__panel-btn" data-path="noname">Давид Гуляев</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Адам Поляков</button>
+                  <button class="accordion__panel-btn" data-path="noname">Адам Поляков</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Полина Орлова</button>
+                  <button class="accordion__panel-btn" data-path="noname">Полина Орлова</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Григорий Казаков</button>
+                  <button class="accordion__panel-btn" data-path="noname">Григорий Казаков</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Данила Кузьмин</button>
+                  <button class="accordion__panel-btn" data-path="noname">Данила Кузьмин</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Егор Архипов</button>
+                  <button class="accordion__panel-btn" data-path="noname">Егор Архипов</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Александр Соболев</button>
+                  <button class="accordion__panel-btn" data-path="noname">Александр Соболев</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Мартин Борисов</button>
+                  <button class="accordion__panel-btn" data-path="noname">Мартин Борисов</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Варвара Аникина</button>
+                  <button class="accordion__panel-btn" data-path="noname">Варвара Аникина</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Кира Краснова</button>
+                  <button class="accordion__panel-btn" data-path="noname">Кира Краснова</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Леон Пономарев</button>
+                  <button class="accordion__panel-btn" data-path="noname">Леон Пономарев</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Виктория Фадеева</button>
+                  <button class="accordion__panel-btn" data-path="noname">Виктория Фадеева</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Григорий Гаврилов</button>
+                  <button class="accordion__panel-btn" data-path="noname">Григорий Гаврилов</button>
                 </li>
               </ul>
             </div>
@@ -1177,63 +1173,63 @@
             <div class="accordion__panel">
               <ul class="accordion__panel-list list-reset" data-ultarget="five">
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Лев Соколов</button>
+                  <button class="accordion__panel-btn" data-path="noname">Лев Соколов</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Юрий Яшин</button>
+                  <button class="accordion__panel-btn" data-path="noname">Юрий Яшин</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Александра Панина</button>
+                  <button class="accordion__panel-btn" data-path="noname">Александра Панина</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Кира Гришина</button>
+                  <button class="accordion__panel-btn" data-path="noname">Кира Гришина</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Екатерина Соловьева</button>
+                  <button class="accordion__panel-btn" data-path="noname">Екатерина Соловьева</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Артём Ковалев</button>
+                  <button class="accordion__panel-btn" data-path="noname">Артём Ковалев</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Георгий Яковлев</button>
+                  <button class="accordion__panel-btn" data-path="noname">Георгий Яковлев</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Александр Калинин</button>
+                  <button class="accordion__panel-btn" data-path="noname">Александр Калинин</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Таисия Власова</button>
+                  <button class="accordion__panel-btn" data-path="noname">Таисия Власова</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Мария Михеева</button>
+                  <button class="accordion__panel-btn" data-path="noname">Мария Михеева</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Егор Кружкин</button>
+                  <button class="accordion__panel-btn" data-path="noname">Егор Кружкин</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Виктор Русаков</button>
+                  <button class="accordion__panel-btn" data-path="noname">Виктор Русаков</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Василиса Григорьева</button>
+                  <button class="accordion__panel-btn" data-path="noname">Василиса Григорьева</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Екатерина Петрова</button>
+                  <button class="accordion__panel-btn" data-path="noname">Екатерина Петрова</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Варвара Гончарова</button>
+                  <button class="accordion__panel-btn" data-path="noname">Варвара Гончарова</button>
                 </li>
               </ul>
             </div>
@@ -1254,63 +1250,63 @@
             <div class="accordion__panel">
               <ul class="accordion__panel-list list-reset" data-ultarget="six">
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Виктория Козлова</button>
+                  <button class="accordion__panel-btn" data-path="noname">Виктория Козлова</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Сергей Карпов</button>
+                  <button class="accordion__panel-btn" data-path="noname">Сергей Карпов</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Мария Захарова</button>
+                  <button class="accordion__panel-btn" data-path="noname">Мария Захарова</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Мирослав Алехин</button>
+                  <button class="accordion__panel-btn" data-path="noname">Мирослав Алехин</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Алиса Рыбакова</button>
+                  <button class="accordion__panel-btn" data-path="noname">Алиса Рыбакова</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Максим Черепанов</button>
+                  <button class="accordion__panel-btn" data-path="noname">Максим Черепанов</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Олеся Лаптева</button>
+                  <button class="accordion__panel-btn" data-path="noname">Олеся Лаптева</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Екатерина Горячева</button>
+                  <button class="accordion__panel-btn" data-path="noname">Екатерина Горячева</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Таисия Афанасьева</button>
+                  <button class="accordion__panel-btn" data-path="noname">Таисия Афанасьева</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Сергей Иванов</button>
+                  <button class="accordion__panel-btn" data-path="noname">Сергей Иванов</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Лев Соловьев</button>
+                  <button class="accordion__panel-btn" data-path="noname">Лев Соловьев</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Вероника Молчанова</button>
+                  <button class="accordion__panel-btn" data-path="noname">Вероника Молчанова</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Екатерина Сизова</button>
+                  <button class="accordion__panel-btn" data-path="noname">Екатерина Сизова</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Даниил Никитин</button>
+                  <button class="accordion__panel-btn" data-path="noname">Даниил Никитин</button>
                 </li>
 
                 <li class="accordion__panel-item">
-                  <button class="accordion__panel-btn">Виктория Корнеева</button>
+                  <button class="accordion__panel-btn" data-path="noname">Виктория Корнеева</button>
                 </li>
               </ul>
             </div>
@@ -1391,58 +1387,149 @@
 
           <a href="#" class="guest__person-link">Эфиры с гостем</a>
         </div>
+
+        <div class="guests__person" data-target="kirillBogomolov">
+          <picture class="guests__person-pict">
+            <source media="(max-width: 767px)" srcset="img/kirill-bogomolov.jpeg">
+            <source media="(max-width: 1023px)" srcset="img/kirill-bogomolov.jpeg">
+            <source media="(max-width: 1399px)" srcset="img/kirill-bogomolov.jpeg">
+            <source media="(min-width: 1400px)" srcset="img/kirill-bogomolov.jpeg">
+            <img src="img/kirill-bogomolov.jpeg" alt="Кирилл Богомолов">
+          </picture>
+
+          <ul class="guests__social flex list-reset">
+            <li class="guests__social-item">
+              <a class="guests__social-link" href="https://instagram.com/">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_24531_5305)">
+                    <path d="M12 2C14.717 2 15.056 2.01 16.122 2.06C17.187 2.11 17.912 2.277 18.55 2.525C19.21 2.779 19.766 3.123 20.322 3.678C20.8305 4.1779 21.224 4.78259 21.475 5.45C21.722 6.087 21.89 6.813 21.94 7.878C21.987 8.944 22 9.283 22 12C22 14.717 21.99 15.056 21.94 16.122C21.89 17.187 21.722 17.912 21.475 18.55C21.2247 19.2178 20.8311 19.8226 20.322 20.322C19.822 20.8303 19.2173 21.2238 18.55 21.475C17.913 21.722 17.187 21.89 16.122 21.94C15.056 21.987 14.717 22 12 22C9.283 22 8.944 21.99 7.878 21.94C6.813 21.89 6.088 21.722 5.45 21.475C4.78233 21.2245 4.17753 20.8309 3.678 20.322C3.16941 19.8222 2.77593 19.2175 2.525 18.55C2.277 17.913 2.11 17.187 2.06 16.122C2.013 15.056 2 14.717 2 12C2 9.283 2.01 8.944 2.06 7.878C2.11 6.812 2.277 6.088 2.525 5.45C2.77524 4.78218 3.1688 4.17732 3.678 3.678C4.17767 3.16923 4.78243 2.77573 5.45 2.525C6.088 2.277 6.812 2.11 7.878 2.06C8.944 2.013 9.283 2 12 2ZM12 7C10.6739 7 9.40215 7.52678 8.46447 8.46447C7.52678 9.40215 7 10.6739 7 12C7 13.3261 7.52678 14.5979 8.46447 15.5355C9.40215 16.4732 10.6739 17 12 17C13.3261 17 14.5979 16.4732 15.5355 15.5355C16.4732 14.5979 17 13.3261 17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5979 7.52678 13.3261 7 12 7ZM18.5 6.75C18.5 6.41848 18.3683 6.10054 18.1339 5.86612C17.8995 5.6317 17.5815 5.5 17.25 5.5C16.9185 5.5 16.6005 5.6317 16.3661 5.86612C16.1317 6.10054 16 6.41848 16 6.75C16 7.08152 16.1317 7.39946 16.3661 7.63388C16.6005 7.8683 16.9185 8 17.25 8C17.5815 8 17.8995 7.8683 18.1339 7.63388C18.3683 7.39946 18.5 7.08152 18.5 6.75ZM12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9Z" fill="#A1A6B4"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_24531_5305">
+                      <rect width="24" height="24" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </li>
+
+            <li class="guests__social-item">
+              <a class="guests__social-link" href="https://fb.com/">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_24531_5308)">
+                    <path d="M15.78 22V14.26H18.3722L18.76 11.2511H15.78V9.33111C15.78 8.46 16.0222 7.86556 17.2711 7.86556H18.8644V5.17444C18.0931 5.09261 17.3179 5.05292 16.5422 5.05556C14.2456 5.05556 12.6733 6.45778 12.6733 9.03333V11.2511H10.0756V14.26H12.6733V22H3.11111C2.81643 22 2.53381 21.8829 2.32544 21.6746C2.11706 21.4662 2 21.1836 2 20.8889V3.11111C2 2.81643 2.11706 2.53381 2.32544 2.32544C2.53381 2.11706 2.81643 2 3.11111 2H20.8889C21.1836 2 21.4662 2.11706 21.6746 2.32544C21.8829 2.53381 22 2.81643 22 3.11111V20.8889C22 21.1836 21.8829 21.4662 21.6746 21.6746C21.4662 21.8829 21.1836 22 20.8889 22H15.78Z" fill="#A1A6B4"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_24531_5308">
+                      <rect width="24" height="24" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </li>
+
+            <li class="guests__social-item">
+              <a class="guests__social-link" href="https://twitter.com/">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_24531_5311)">
+                    <path d="M22.1621 5.65593C21.3986 5.99362 20.589 6.2154 19.7601 6.31393C20.6338 5.79136 21.2878 4.96894 21.6001 3.99993C20.7801 4.48793 19.8811 4.82993 18.9441 5.01493C18.3147 4.34151 17.4804 3.89489 16.571 3.74451C15.6616 3.59413 14.728 3.74842 13.9153 4.18338C13.1026 4.61834 12.4564 5.30961 12.0772 6.14972C11.6979 6.98983 11.6068 7.93171 11.8181 8.82893C10.1552 8.74558 8.52838 8.31345 7.04334 7.56059C5.55829 6.80773 4.24818 5.75097 3.19805 4.45893C2.82634 5.09738 2.63101 5.82315 2.63205 6.56193C2.63205 8.01193 3.37005 9.29293 4.49205 10.0429C3.82806 10.022 3.17869 9.84271 2.59805 9.51993V9.57193C2.59825 10.5376 2.93242 11.4735 3.5439 12.221C4.15538 12.9684 5.00653 13.4814 5.95305 13.6729C5.33667 13.84 4.69036 13.8646 4.06305 13.7449C4.32992 14.5762 4.85006 15.3031 5.55064 15.824C6.25123 16.3449 7.09718 16.6337 7.97005 16.6499C7.10253 17.3313 6.10923 17.8349 5.04693 18.1321C3.98464 18.4293 2.87418 18.5142 1.77905 18.3819C3.69075 19.6114 5.91615 20.264 8.18905 20.2619C15.8821 20.2619 20.0891 13.8889 20.0891 8.36193C20.0891 8.18193 20.0841 7.99993 20.0761 7.82193C20.8949 7.23009 21.6017 6.49695 22.1631 5.65693L22.1621 5.65593Z" fill="#A1A6B4"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_24531_5311">
+                      <rect width="24" height="24" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+          <h3 class="guest__person-name">Кирилл Богомолов</h3>
+
+          <p class="guest__person-descr">
+            Российский программист, армрестлер, гроза Лобни, друг Дена, поедатель печенек. Вытирает руки об занавески. Любит поболтать за бэкэнд. Ведёт активную пивную деятельность, как&nbsp;куратор бара «Опыт», коим является с&nbsp;2016&nbsp;года.
+          </p>
+
+          <a href="#" class="guest__person-link">Эфиры с гостем</a>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="playlists section-offset" id="playlists">
-    <div class="container playlists__container">
+    <div class="container playlists__container flex">
       <div class="playlists__left-wrap">
         <h2 class="playlists__title section-title">Плейлисты</h2>
 
         <form class="playlists__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
           <fieldset>
-            <legend>Жанр</legend>
+            <legend class="playlists__legend">Жанр</legend>
 
-            <label class="playlists__form-label">
-              <input class="playlists__form-input" type="radio" name="Жанр" value="Постпанк"> Постпанк
-              <span class="playlists__form-span" tabindex="0" role="radio" aria-checked="true"></span>
-            </label>
+            <ul class="playlists__list list-reset">
+              <li class="playlists__item">
+                <label class="playlists__form-label flex">
+                  <span class="playlists__form-span">Постпанк</span>
+                  <input class="playlists__form-input" type="radio" name="Жанр" value="Постпанк" checked>
+                  <span class="playlists__form-cust-input" tabindex="0" role="radio" aria-checked="true"></span>
+                </label>
+              </li>
 
-            <label class="playlists__form-label">
-              <input class="playlists__form-input" type="radio" name="Жанр" value="Хардкор"> Хардкор
-              <span class="playlists__form-span" tabindex="0" role="radio" aria-checked="false"></span>
-            </label>
+              <li class="playlists__item">
+                <label class="playlists__form-label flex">
+                  <span class="playlists__form-span">Хардкор</span>
+                  <input class="playlists__form-input" type="radio" name="Жанр" value="Хардкор">
+                  <span class="playlists__form-cust-input" tabindex="0" role="radio" aria-checked="false"></span>
+                </label>
+              </li>
 
-            <label class="playlists__form-label">
-              <input class="playlists__form-input" type="radio" name="Жанр" value="Панк-рок"> Панк-рок
-              <span class="playlists__form-span" tabindex="0" role="radio" aria-checked="false"></span>
-            </label>
+              <li class="playlists__item">
+                <label class="playlists__form-label flex">
+                  <span class="playlists__form-span">Панк-рок</span>
+                  <input class="playlists__form-input" type="radio" name="Жанр" value="Панк-рок">
+                  <span class="playlists__form-cust-input" tabindex="0" role="radio" aria-checked="false"></span>
+                </label>
+              </li>
 
-            <label class="playlists__form-label">
-              <input class="playlists__form-input" type="radio" name="Жанр" value="Рок"> Рок
-              <span class="playlists__form-span" tabindex="0" role="radio" aria-checked="false"></span>
-            </label>
+              <li class="playlists__item">
+                <label class="playlists__form-label flex">
+                  <span class="playlists__form-span">Рок</span>
+                  <input class="playlists__form-input" type="radio" name="Жанр" value="Рок">
+                  <span class="playlists__form-cust-input" tabindex="0" role="radio" aria-checked="false"></span>
+                </label>
+              </li>
 
-            <label class="playlists__form-label">
-              <input class="playlists__form-input" type="radio" name="Жанр" value="Прогрессивный рок"> Прогрессивный рок
-              <span class="playlists__form-span" tabindex="0" role="radio" aria-checked="false"></span>
-            </label>
+              <li class="playlists__item">
+                <label class="playlists__form-label flex">
+                  <span class="playlists__form-span">Прогрессивный рок</span>
+                  <input class="playlists__form-input" type="radio" name="Жанр" value="Прогрессивный рок">
+                  <span class="playlists__form-cust-input" tabindex="0" role="radio" aria-checked="false"></span>
+                </label>
+              </li>
 
-            <label class="playlists__form-label">
-              <input class="playlists__form-input" type="radio" name="Жанр" value="Электронная музыка"> Электронная музыка
-              <span class="playlists__form-span" tabindex="0" role="radio" aria-checked="false"></span>
-            </label>
+              <li class="playlists__item">
+                <label class="playlists__form-label flex">
+                  <span class="playlists__form-span">Электронная музыка</span>
+                  <input class="playlists__form-input" type="radio" name="Жанр" value="Электронная музыка">
+                  <span class="playlists__form-cust-input" tabindex="0" role="radio" aria-checked="false"></span>
+                </label>
+              </li>
 
-            <label class="playlists__form-label">
-              <input class="playlists__form-input" type="radio" name="Жанр" value="Классическая музыка"> Классическая музыка
-              <span class="playlists__form-span" tabindex="0" role="radio" aria-checked="false"></span>
-            </label>
+              <li class="playlists__item">
+                <label class="playlists__form-label flex">
+                  <span class="playlists__form-span">Классическая музыка</span>
+                  <input class="playlists__form-input" type="radio" name="Жанр" value="Классическая музыка">
+                  <span class="playlists__form-cust-input" tabindex="0" role="radio" aria-checked="false"></span>
+                </label>
+              </li>
 
-            <label class="playlists__form-label">
-              <input class="playlists__form-input" type="radio" name="Жанр" value="Звуки природы и шум города"> Звуки природы и шум города
-              <span class="playlists__form-span" tabindex="0" role="radio" aria-checked="false"></span>
-            </label>
+              <li class="playlists__item">
+                <label class="playlists__form-label flex">
+                  <span class="playlists__form-span">Звуки природы и шум города</span>
+                  <input class="playlists__form-input" type="radio" name="Жанр" value="Звуки природы и шум города">
+                  <span class="playlists__form-cust-input" tabindex="0" role="radio" aria-checked="false"></span>
+                </label>
+              </li>
+            </ul>
           </fieldset>
         </form>
 
@@ -1459,15 +1546,17 @@
         </div>
       </div>
 
-      <ul class="playlists__card-list">
+      <ul class="playlists__card-list list-reset flex">
         <li class="playlists__card-item">
           <div class="playlists__photo-wrap">
             <img class="playlists__photo-album" src="img/playlists-1.jpg" alt="Ploho">
-            <img class="playlists__country" src="img/country-Russia.svg" alt="Russia">
+            <div class="playlists__country-wrap">
+              <img class="playlists__country" src="img/country-Russia.svg" alt="Russia">
+            </div>
           </div>
 
           <div class="playlists__desc-wrap">
-            <h3 class="playlists__subtitle subtitle">Ploho</h3>
+            <h3 class="playlists__subtitle">Ploho</h3>
 
             <span class="playlists__desc-text">3&nbsp;последних альбома</span>
           </div>
@@ -1476,11 +1565,13 @@
         <li class="playlists__card-item">
           <div class="playlists__photo-wrap">
             <img class="playlists__photo-album" src="img/playlists-2.jpg" alt="Molchat Doma">
-            <img class="playlists__country" src="img/country-Russia.svg" alt="Russia">
+            <div class="playlists__country-wrap">
+              <img class="playlists__country" src="img/country-Russia.svg" alt="Russia">
+            </div>
           </div>
 
           <div class="playlists__desc-wrap">
-            <h3 class="playlists__subtitle subtitle">Molchat Doma</h3>
+            <h3 class="playlists__subtitle">Molchat Doma</h3>
 
             <span class="playlists__desc-text">Все&nbsp;песни</span>
           </div>
@@ -1489,11 +1580,13 @@
         <li class="playlists__card-item">
           <div class="playlists__photo-wrap">
             <img class="playlists__photo-album" src="img/playlists-3.jpg" alt="Motorama">
-            <img class="playlists__country" src="img/country-Russia.svg" alt="Russia">
+            <div class="playlists__country-wrap">
+              <img class="playlists__country" src="img/country-Russia.svg" alt="Russia">
+            </div>
           </div>
 
           <div class="playlists__desc-wrap">
-            <h3 class="playlists__subtitle subtitle">Motorama</h3>
+            <h3 class="playlists__subtitle">Motorama</h3>
 
             <span class="playlists__desc-text">Все&nbsp;синглы</span>
           </div>
@@ -1502,11 +1595,13 @@
         <li class="playlists__card-item">
           <div class="playlists__photo-wrap">
             <img class="playlists__photo-album" src="img/playlists-4.jpg" alt="Human Tetris">
-            <img class="playlists__country" src="img/country-Russia.svg" alt="Russia">
+            <div class="playlists__country-wrap">
+              <img class="playlists__country" src="img/country-Russia.svg" alt="Russia">
+            </div>
           </div>
 
           <div class="playlists__desc-wrap">
-            <h3 class="playlists__subtitle subtitle">Human Tetris</h3>
+            <h3 class="playlists__subtitle">Human Tetris</h3>
 
             <span class="playlists__desc-text">3&nbsp;последних альбома</span>
           </div>
@@ -1515,11 +1610,13 @@
         <li class="playlists__card-item">
           <div class="playlists__photo-wrap">
             <img class="playlists__photo-album" src="img/playlists-5.jpg" alt="Буерак">
-            <img class="playlists__country" src="img/country-Russia.svg" alt="Russia">
+            <div class="playlists__country-wrap">
+              <img class="playlists__country" src="img/country-Russia.svg" alt="Russia">
+            </div>
           </div>
 
           <div class="playlists__desc-wrap">
-            <h3 class="playlists__subtitle subtitle">Буерак</h3>
+            <h3 class="playlists__subtitle">Буерак</h3>
 
             <span class="playlists__desc-text">Все&nbsp;EP</span>
           </div>
@@ -1528,11 +1625,13 @@
         <li class="playlists__card-item">
           <div class="playlists__photo-wrap">
             <img class="playlists__photo-album" src="img/playlists-6.jpg" alt="Июльские&nbsp;Дни">
-            <img class="playlists__country" src="img/country-Russia.svg" alt="Russia">
+            <div class="playlists__country-wrap">
+              <img class="playlists__country" src="img/country-Russia.svg" alt="Russia">
+            </div>
           </div>
 
           <div class="playlists__desc-wrap">
-            <h3 class="playlists__subtitle subtitle">Июльские&nbsp;Дни</h3>
+            <h3 class="playlists__subtitle">Июльские&nbsp;Дни</h3>
 
             <span class="playlists__desc-text">Альбом «Колокол»</span>
           </div>
@@ -1541,11 +1640,13 @@
         <li class="playlists__card-item">
           <div class="playlists__photo-wrap">
             <img class="playlists__photo-album" src="img/playlists-7.jpg" alt="Joy Division">
-            <img class="playlists__country" src="img/country-Great-Br.svg" alt="Great-Britain">
+            <div class="playlists__country-wrap">
+              <img class="playlists__country" src="img/country-Great-Br.svg" alt="Great-Britain">
+            </div>
           </div>
 
           <div class="playlists__desc-wrap">
-            <h3 class="playlists__subtitle subtitle">Joy Division</h3>
+            <h3 class="playlists__subtitle">Joy Division</h3>
 
             <span class="playlists__desc-text">Лучшее за&nbsp;всё&nbsp;время</span>
           </div>
@@ -1554,11 +1655,13 @@
         <li class="playlists__card-item">
           <div class="playlists__photo-wrap">
             <img class="playlists__photo-album" src="img/playlists-8.jpg" alt="The Cure">
-            <img class="playlists__country" src="img/country-Great-Br.svg" alt="Great-Britain">
+            <div class="playlists__country-wrap">
+              <img class="playlists__country" src="img/country-Great-Br.svg" alt="Great-Britain">
+            </div>
           </div>
 
           <div class="playlists__desc-wrap">
-            <h3 class="playlists__subtitle subtitle">The Cure</h3>
+            <h3 class="playlists__subtitle">The Cure</h3>
 
             <span class="playlists__desc-text">Лучшее за&nbsp;всё&nbsp;время</span>
           </div>
@@ -1567,11 +1670,13 @@
         <li class="playlists__card-item">
           <div class="playlists__photo-wrap">
             <img class="playlists__photo-album" src="img/playlists-9.jpg" alt="The Smiths">
-            <img class="playlists__country" src="img/country-Great-Br.svg" alt="Great-Britain">
+            <div class="playlists__country-wrap">
+              <img class="playlists__country" src="img/country-Great-Br.svg" alt="Great-Britain">
+            </div>
           </div>
 
           <div class="playlists__desc-wrap">
-            <h3 class="playlists__subtitle subtitle">The Smiths</h3>
+            <h3 class="playlists__subtitle">The Smiths</h3>
 
             <span class="playlists__desc-text">Период 1984–1988</span>
           </div>
@@ -1580,11 +1685,13 @@
         <li class="playlists__card-item">
           <div class="playlists__photo-wrap">
             <img class="playlists__photo-album" src="img/playlists-10.jpg" alt="New Order">
-            <img class="playlists__country" src="img/country-Great-Br.svg" alt="Great-Britain">
+            <div class="playlists__country-wrap">
+              <img class="playlists__country" src="img/country-Great-Br.svg" alt="Great-Britain">
+            </div>
           </div>
 
           <div class="playlists__desc-wrap">
-            <h3 class="playlists__subtitle subtitle">New Order</h3>
+            <h3 class="playlists__subtitle">New Order</h3>
 
             <span class="playlists__desc-text">Хиты</span>
           </div>
@@ -1593,11 +1700,13 @@
         <li class="playlists__card-item">
           <div class="playlists__photo-wrap">
             <img class="playlists__photo-album" src="img/playlists-11.jpg" alt="Bauhaus">
-            <img class="playlists__country" src="img/country-Great-Br.svg" alt="Great-Britain">
+            <div class="playlists__country-wrap">
+              <img class="playlists__country" src="img/country-Great-Br.svg" alt="Great-Britain">
+            </div>
           </div>
 
           <div class="playlists__desc-wrap">
-            <h3 class="playlists__subtitle subtitle">Bauhaus</h3>
+            <h3 class="playlists__subtitle">Bauhaus</h3>
 
             <span class="playlists__desc-text">Все&nbsp; синглы</span>
           </div>
@@ -1606,11 +1715,13 @@
         <li class="playlists__card-item">
           <div class="playlists__photo-wrap">
             <img class="playlists__photo-album" src="img/playlists-12.jpg" alt="Gang Of Four">
-            <img class="playlists__country" src="img/country-Great-Br.svg" alt="Great-Britain">
+            <div class="playlists__country-wrap">
+              <img class="playlists__country" src="img/country-Great-Br.svg" alt="Great-Britain">
+            </div>
           </div>
 
           <div class="playlists__desc-wrap">
-            <h3 class="playlists__subtitle subtitle">Gang Of Four</h3>
+            <h3 class="playlists__subtitle">Gang Of Four</h3>
 
             <span class="playlists__desc-text">3&nbsp; последних альбома</span>
           </div>
@@ -1632,7 +1743,7 @@
   </section>
 
   <section class="adv section-offset" id="adv">
-    <div class="container adv__container">
+    <div class="container adv__container flex">
       <picture class="adv__picture">
         <source media="(max-width: 767px)" srcset="img/radio-320.png">
         <source media="(max-width: 1023px)" srcset="img/radio-768.png">
@@ -1650,11 +1761,11 @@
           <img class="adv__wawe-img" src="img/adv-wawe-desc.svg" alt="Радио">
         </picture>
 
-        <p class="adv__text">
+        <p class="adv__text adv__text_first">
           Друзья, рады представить вам&nbsp;продукт нашего производства! Да-да, несмотря на&nbsp;то, что&nbsp;мы&nbsp;только начали свой путь радиовещателей, нам&nbsp;хочется, чтобы&nbsp;вы&nbsp;могли как&nbsp;следует нас&nbsp;расслышать:)
         </p>
 
-        <p class="adv__text">
+        <p class="adv__text adv__text_last">
           Итак, встречайте! Портативный радиоприёмник-колонка W-Wave&nbsp;1.0&nbsp;xm. Тщательный подбор всех делатей, ручная сборка, качественный звук. Пока доступно только 60&nbsp;штук в&nbsp;3&nbsp;цветах, но&nbsp;мы&nbsp;активно трудимся над&nbsp;новыми партиями и&nbsp;дизайном. Спешите приобрести!
         </p>
 
@@ -1667,7 +1778,7 @@
 
   <section class="about section-offset" id="about">
     <div class="container about__container">
-      <div class="about__top-wrap">
+      <div class="about__top-wrap flex">
         <div class="about__top-text-wrap">
           <h2 class="about__title section-title">О&nbsp;нас</h2>
 
@@ -1680,7 +1791,7 @@
           </p>
         </div>
 
-        <div class="about__top-figures">
+        <div class="about__top-figures flex">
           <picture class="about__spiral-picture">
             <source media="(max-width: 1023px)" srcset="img/about-spiral-768.svg">
             <source media="(min-width: 1024px)" srcset="img/about-spiral-desc.svg">
@@ -1695,7 +1806,7 @@
         </div>
       </div>
 
-      <ul class="about__list">
+      <ul class="about__list list-reset flex">
         <li class="about__item">
           <picture class="about__picture">
             <source media="(max-width: 767px)" srcset="img/about-1-320.jpg">

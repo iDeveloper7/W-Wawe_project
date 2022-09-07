@@ -66,3 +66,15 @@ tabsBtn.forEach(function (el) {
     document.querySelector(`[data-target = "${path}"]`).classList.add('guests__person_active');
   })
 })
+
+//swiper
+
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 4,
+  loop: true,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+})

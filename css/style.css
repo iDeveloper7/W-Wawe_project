@@ -1057,6 +1057,15 @@ a {
   background-color: #121723;
 }
 
+.about__container {
+  position: relative;
+}
+
+/*about__top-wrap*/
+.about__top-wrap {
+  margin-bottom: 25px;
+}
+
 .about__top-text-wrap {
   width: 60%;
 }
@@ -1083,3 +1092,163 @@ a {
   align-items: center;
   width: 40%;
 }
+
+/*about__swiper*/
+.swiper {
+  position: initial;
+}
+
+.about__swiper {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.about__img {
+  margin-bottom: 26px;
+}
+
+.about__subtitle {
+  margin: 0 0 8px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.about__descr {
+  margin: 0;
+  font: 400 16px / 24px "Muller", sans-serif;
+  color: #A1A6B4;
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+  left: -60px;
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+  right: -60px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  top: 39%;
+  margin-top: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 100%;
+}
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after,
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+  display: none;
+}
+
+.swiper-btn-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.swiper-btn-img_prev {
+  transform: rotate(90deg);
+}
+
+.swiper-btn-img_next {
+  transform: rotate(-90deg);
+}
+
+/*about__form*/
+
+.about__form {
+  max-width: 920px;
+}
+
+.about__textarea {
+  margin-bottom: 25px;
+  padding: 30px 32px;
+  width: 100%;
+  height: 150px;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  font: var(--font400_20_20);
+  color: #A1A6B4;
+  background-color: transparent;
+  resize: none;
+}
+
+.about__name-mail-wrap {
+  justify-content: space-between;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 70px;
+}
+
+.about__label {
+  width: calc((100% - 30px)/ 2);
+  height: 100%;
+}
+
+.about__input {
+  margin-bottom: 30px;
+  padding: 25px 32px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  font: var(--font400_20_20);
+  color: #A1A6B4;
+  background-color: transparent;
+}
+
+.about__btn {
+  margin-bottom: 28px;
+  padding: 25px 54px;
+  border: none;
+  border-radius: 40px;
+  font: var(--font500_20_20);
+  color: #fff;
+  background-color: #6D31EE;
+  cursor: pointer;
+}
+
+.about__check-label {
+  display: block;
+}
+
+.about__check-label {
+  position: relative;
+  align-items: center;
+}
+
+.about__check-text {
+  padding-left: 22px;
+  font: 500 12px / 12px "Muller", sans-serif;
+  color: #fff;
+}
+
+.about__check-input {
+  display: none;
+}
+
+.about__check-cust-input {
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #fff;
+}
+
+.about__check-input + .about__check-cust-input::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../img/about-check-img.svg") center center no-repeat;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.about__check-input:checked + .about__check-cust-input::after {
+  opacity: 1;
+}
+

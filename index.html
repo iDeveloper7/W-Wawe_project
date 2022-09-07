@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"/>
   <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.2/dist/accordion.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -1806,108 +1807,126 @@
         </div>
       </div>
 
-      <ul class="about__list list-reset flex">
-        <li class="about__item">
-          <picture class="about__picture">
-            <source media="(max-width: 767px)" srcset="img/about-1-320.jpg">
-            <source media="(max-width: 1023px)" srcset="img/about-1-desc.jpg">
-            <source media="(max-width: 1200px)" srcset="img/about-1-1024.jpg">
-            <source media="(min-width: 1201px)" srcset="img/about-1-desc.jpg">
-            <img class="about__img" src="img/about-1-desc.jpg" alt="Дмитрий Гутенберг">
-          </picture>
+      <div class="about__swiper swiper">
+        <ul class="about__list swiper-wrapper list-reset">
+          <li class="about__item swiper-slide">
+            <picture class="about__picture">
+              <source media="(max-width: 767px)" srcset="img/about-1-320.jpg">
+              <source media="(max-width: 1023px)" srcset="img/about-1-desc.jpg">
+              <source media="(max-width: 1200px)" srcset="img/about-1-1024.jpg">
+              <source media="(min-width: 1201px)" srcset="img/about-1-desc.jpg">
+              <img class="about__img" src="img/about-1-desc.jpg" alt="Дмитрий Гутенберг">
+            </picture>
 
-          <h3 class="about__subtitle subtitle">Дмитрий Гутенберг</h3>
+            <h3 class="about__subtitle subtitle">Дмитрий Гутенберг</h3>
 
-          <p class="about__descr">Эксперт (ну, почти) по&nbsp;всем вопросам (почти)</p>
-        </li>
+            <p class="about__descr">Эксперт (ну, почти) по&nbsp;всем вопросам (почти)</p>
+          </li>
 
-        <li class="about__item">
-          <picture class="about__picture">
-            <source media="(max-width: 767px)" srcset="img/about-2-320.jpg">
-            <source media="(max-width: 1023px)" srcset="img/about-2-desc.jpg">
-            <source media="(max-width: 1200px)" srcset="img/about-2-1024.jpg">
-            <source media="(min-width: 1201px)" srcset="img/about-2-desc.jpg">
-            <img src="img/about-2-desc.jpg" alt="Анна Васильева">
-          </picture>
+          <li class="about__item swiper-slide">
+            <picture class="about__picture">
+              <source media="(max-width: 767px)" srcset="img/about-2-320.jpg">
+              <source media="(max-width: 1023px)" srcset="img/about-2-desc.jpg">
+              <source media="(max-width: 1200px)" srcset="img/about-2-1024.jpg">
+              <source media="(min-width: 1201px)" srcset="img/about-2-desc.jpg">
+              <img class="about__img" src="img/about-2-desc.jpg" alt="Анна Васильева">
+            </picture>
 
-          <h3 class="about__subtitle subtitle">Анна Васильева</h3>
+            <h3 class="about__subtitle subtitle">Анна Васильева</h3>
 
-          <p class="about__descr">Как&nbsp;я&nbsp;здесь оказалась? А&nbsp;главное&nbsp;— зачем?</p>
-        </li>
+            <p class="about__descr">Как&nbsp;я&nbsp;здесь оказалась? А&nbsp;главное&nbsp;— зачем?</p>
+          </li>
 
-        <li class="about__item">
-          <picture class="about__picture">
-            <source media="(max-width: 767px)" srcset="img/about-3-320.jpg">
-            <source media="(max-width: 1023px)" srcset="img/about-3-desc.jpg">
-            <source media="(max-width: 1200px)" srcset="img/about-3-1024.jpg">
-            <source media="(min-width: 1201px)" srcset="img/about-3-desc.jpg">
-            <img class="about__img" src="img/about-3-desc.jpg" alt="Пётр Дмитриевский">
-          </picture>
+          <li class="about__item swiper-slide">
+            <picture class="about__picture">
+              <source media="(max-width: 767px)" srcset="img/about-3-320.jpg">
+              <source media="(max-width: 1023px)" srcset="img/about-3-desc.jpg">
+              <source media="(max-width: 1200px)" srcset="img/about-3-1024.jpg">
+              <source media="(min-width: 1201px)" srcset="img/about-3-desc.jpg">
+              <img class="about__img" src="img/about-3-desc.jpg" alt="Пётр Дмитриевский">
+            </picture>
 
-          <h3 class="about__subtitle subtitle">Пётр Дмитриевский</h3>
+            <h3 class="about__subtitle subtitle">Пётр Дмитриевский</h3>
 
-          <p class="about__descr">Господа! Внимание! Благодарю за&nbsp;внимание!</p>
-        </li>
+            <p class="about__descr">Господа! Внимание! Благодарю за&nbsp;внимание!</p>
+          </li>
 
-        <li class="about__item">
-          <picture class="about__picture">
-            <source media="(max-width: 767px)" srcset="img/about-4-320.jpg">
-            <source media="(max-width: 1023px)" srcset="img/about-4-desc.jpg">
-            <source media="(max-width: 1200px)" srcset="img/about-4-1024.jpg">
-            <source media="(min-width: 1201px)" srcset="img/about-4-desc.jpg">
-            <img class="about__img" src="img/about-4-desc.jpg" alt="Татьяна Флеганова">
-          </picture>
+          <li class="about__item swiper-slide">
+            <picture class="about__picture">
+              <source media="(max-width: 767px)" srcset="img/about-4-320.jpg">
+              <source media="(max-width: 1023px)" srcset="img/about-4-desc.jpg">
+              <source media="(max-width: 1200px)" srcset="img/about-4-1024.jpg">
+              <source media="(min-width: 1201px)" srcset="img/about-4-desc.jpg">
+              <img class="about__img" src="img/about-4-desc.jpg" alt="Татьяна Флеганова">
+            </picture>
 
-          <h3 class="about__subtitle subtitle">Татьяна Флеганова</h3>
+            <h3 class="about__subtitle subtitle">Татьяна Флеганова</h3>
 
-          <p class="about__descr">Одна я&nbsp;в&nbsp;пальто стою красивая, а&nbsp;вокруг…</p>
-        </li>
+            <p class="about__descr">Одна я&nbsp;в&nbsp;пальто стою красивая, а&nbsp;вокруг…</p>
+          </li>
 
-        <li class="about__item">
-          <picture class="about__picture">
-            <source media="(max-width: 767px)" srcset="img/about-5-320.jpg">
-            <source media="(max-width: 1023px)" srcset="img/about-5-desc.jpg">
-            <source media="(max-width: 1200px)" srcset="img/about-5-1024.jpg">
-            <source media="(min-width: 1201px)" srcset="img/about-5-desc.jpg">
-            <img class="about__img" src="img/about-5-desc.jpg" alt="Фёдор Прокопьев">
-          </picture>
+          <li class="about__item swiper-slide">
+            <picture class="about__picture">
+              <source media="(max-width: 767px)" srcset="img/about-5-320.jpg">
+              <source media="(max-width: 1023px)" srcset="img/about-5-desc.jpg">
+              <source media="(max-width: 1200px)" srcset="img/about-5-1024.jpg">
+              <source media="(min-width: 1201px)" srcset="img/about-5-desc.jpg">
+              <img class="about__img" src="img/about-5-desc.jpg" alt="Фёдор Прокопьев">
+            </picture>
 
-          <h3 class="about__subtitle subtitle">Фёдор Прокопьев</h3>
+            <h3 class="about__subtitle subtitle">Фёдор Прокопьев</h3>
 
-          <p class="about__descr">Привет! Я фотограф, музыкант, ведущий</p>
-        </li>
+            <p class="about__descr">Привет! Я фотограф, музыкант, ведущий</p>
+          </li>
 
-        <li class="about__item">
-          <picture class="about__picture">
-            <source media="(max-width: 767px)" srcset="img/about-6-320.jpg">
-            <source media="(max-width: 1023px)" srcset="img/about-6-desc.jpg">
-            <source media="(max-width: 1200px)" srcset="img/about-6-1024.jpg">
-            <source media="(min-width: 1201px)" srcset="img/about-6-desc.jpg">
-            <img class="about__img" src="img/about-6-desc.jpg" alt="Светлана Кортнева">
-          </picture>
+          <li class="about__item swiper-slide">
+            <picture class="about__picture">
+              <source media="(max-width: 767px)" srcset="img/about-6-320.jpg">
+              <source media="(max-width: 1023px)" srcset="img/about-6-desc.jpg">
+              <source media="(max-width: 1200px)" srcset="img/about-6-1024.jpg">
+              <source media="(min-width: 1201px)" srcset="img/about-6-desc.jpg">
+              <img class="about__img" src="img/about-6-desc.jpg" alt="Светлана Кортнева">
+            </picture>
 
-          <h3 class="about__subtitle subtitle">Светлана Кортнева</h3>
+            <h3 class="about__subtitle subtitle">Светлана Кортнева</h3>
 
-          <p class="about__descr">Художник-оформитель. Оформляю</p>
-        </li>
-      </ul>
+            <p class="about__descr">Художник-оформитель. Оформляю</p>
+          </li>
+        </ul>
+
+        <div class="swiper-button-prev">
+          <svg class="swiper-btn-img swiper-btn-img_prev" data-btntarget="one" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2"/>
+            <path d="M13 19L21 27L29 19" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
+          </svg>
+        </div>
+        <div class="swiper-button-next">
+          <svg class="swiper-btn-img swiper-btn-img_next" data-btntarget="one" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2"/>
+            <path d="M13 19L21 27L29 19" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
+          </svg>
+        </div>
+      </div>
 
       <form class="about__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
         <textarea class="about__textarea" placeholder="Что скажете?"></textarea>
 
-        <label class="about__name-label">
-          <input class="about__name-input" type="text" name="Имя" placeholder="Имя">
-        </label>
+        <div class="about__name-mail-wrap flex">
+          <label class="about__label about__label_name">
+            <input class="about__input about__input_name" type="text" name="Имя" placeholder="Имя">
+          </label>
 
-        <label class="about__mail-label">
-          <input class="about__mail-input" type="email" name="Email" placeholder="Email">
-        </label>
+          <label class="about__label about__label_mail">
+            <input class="about__input about__input_mail" type="email" name="Email" placeholder="Email">
+          </label>
+        </div>
 
         <button class="about__btn btn">Отправить</button>
 
-        <label class="about__check-label">
-          <input class="about__check-input" type="checkbox"> Согласен на&nbsp;обработку персональных данных
-          <span class="about__check-span" tabindex="0" role="checkbox" aria-checked="true"></span>
+        <label class="about__check-label flex">
+          <span class="about__check-text">Согласен на&nbsp;обработку персональных данных</span>
+          <input class="about__check-input" type="checkbox" name="Согласие на обработку персональных данных" checked>
+          <span class="about__check-cust-input" tabindex="0" role="checkbox" aria-checked="true"></span>
         </label>
       </form>
     </div>
@@ -1998,6 +2017,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
 <script src="https://unpkg.com/accordion-js@3.3.2/dist/accordion.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="index.js"></script>
 </body>
 </html>

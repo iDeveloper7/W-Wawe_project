@@ -839,6 +839,7 @@ a {
   display: inline-flex;
   align-items: center;
   height: 26px;
+  cursor: pointer;
 }
 
 .playlists__form-input {
@@ -1160,11 +1161,18 @@ a {
   max-width: 920px;
 }
 
-.about__textarea {
-  margin-bottom: 25px;
-  padding: 30px 32px;
+.about__textarea-label {
+  position: relative;
+  display: block;
+  margin-bottom: 30px;
   width: 100%;
   height: 150px;
+}
+
+.about__textarea {
+  padding: 30px 32px;
+  width: 100%;
+  height: 100%;
   border: 1px solid #fff;
   border-radius: 30px;
   font: var(--font400_20_20);
@@ -1181,12 +1189,13 @@ a {
 }
 
 .about__label {
+  position: relative;
+  margin-bottom: 30px;
   width: calc((100% - 30px)/ 2);
   height: 100%;
 }
 
 .about__input {
-  margin-bottom: 30px;
   padding: 25px 32px;
   width: 100%;
   height: 100%;
@@ -1198,6 +1207,7 @@ a {
 }
 
 .about__btn {
+  display: block;
   margin-bottom: 28px;
   padding: 25px 54px;
   border: none;
@@ -1209,12 +1219,9 @@ a {
 }
 
 .about__check-label {
-  display: block;
-}
-
-.about__check-label {
   position: relative;
   align-items: center;
+  display: inline-block;
 }
 
 .about__check-text {
@@ -1252,3 +1259,85 @@ a {
   opacity: 1;
 }
 
+/*validation*/
+
+.just-validate-error-field,
+.just-validate-error-field + .about__check-cust-input {
+  border-color: #D52B1E;
+}
+
+.just-validate-error-label {
+  position: absolute;
+  top: 9px;
+  left: 32px;
+  font: 400 12px / 12px "Muller", sans-serif;
+  color: #D52B1E!important;
+}
+
+/*footer*/
+/*footer-top*/
+.footer {
+  background-color: #292E39;
+}
+
+.footer-top__left-wrap {
+  margin-right: auto;
+}
+
+.footer-top__logo-link {
+  display: inline-block;
+  margin-bottom: 14px;
+}
+
+.footer-top__social {
+  align-items: center;
+}
+
+.footer-top__social-item:not(:last-child) {
+  margin-right: 21px;
+}
+
+.footer-top__social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+}
+
+/*footer-top__nav*/
+.footer-top__nav-list {
+  margin-bottom: -20px;
+  column-count: 3;
+  column-gap: 125px;
+}
+
+.footer-top__nav-item {
+  margin-bottom: 20px;
+  width: fit-content;
+}
+
+.footer-top__nav-link {
+  font: var(--font400_16_16);
+  color: #fff;
+}
+
+/*footer-bottom*/
+
+.footer-bottom {
+  padding-bottom: 10px;
+}
+
+.footer-bottom__trademark-img {
+  margin-bottom: 10px;
+}
+
+.footer-bottom-span-wrap {
+  justify-content: center;
+}
+
+.footer-bottom__trademark-span {
+  font: 400 16px / 103.34% "Muller", sans-serif;
+  color: #A1A6B4;
+  text-align: center;
+}

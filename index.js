@@ -78,3 +78,61 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   }
 })
+
+// just validate
+
+const validation = new JustValidate('.about__form');
+
+validation
+  .addField('.about__textarea', [
+    {
+      rule: 'required',
+      errorMessage: 'Введите текст',
+    },
+    {
+      rule: 'minLength',
+      value: 2,
+      errorMessage: 'Длина текста должна быть не менее 2-ух символов',
+    },
+    {
+      rule: 'maxLength',
+      value: 100,
+      errorMessage: 'Длина текста должна быть не более 100-а символов',
+    },
+  ])
+  .addField('.about__input_name', [
+    {
+      rule: 'required',
+      errorMessage: 'Введите имя',
+    },
+    {
+      rule: 'minLength',
+      value: 2,
+      errorMessage: 'Длина имени должна быть не менее 2-ух символов',
+    },
+    {
+      rule: 'maxLength',
+      value: 30,
+      errorMessage: 'Длина имени должна быть не более 30-и символов',
+    },
+    {
+      rule: 'customRegexp',
+      value: /^[A-Za-zА-Яа-яЁё\\s]+$/,
+      errorMessage: 'Некорректное имя',
+    },
+  ])
+  .addField('.about__input_mail', [
+    {
+      rule: 'required',
+      errorMessage: 'Введите Email',
+    },
+    {
+      rule: 'email',
+      errorMessage: 'Некорректный Email',
+    },
+  ])
+  .addField('.about__check-input', [
+    {
+      rule: 'required',
+    },
+  ]);

@@ -1,3 +1,22 @@
+// search
+
+const search = document.querySelector('.search');
+const searchInput = document.querySelector('.search__input');
+const searchBtn = document.querySelector('.search__search-btn');
+const searchCloseBtn = document.querySelector('.search__close-btn');
+
+searchBtn.addEventListener('click', function () {
+  search.classList.add('search_active');
+  searchInput.classList.add('search__input_active');
+  searchCloseBtn.classList.add('search__close-btn_active');
+})
+
+searchCloseBtn.addEventListener('click', function () {
+  search.classList.remove('search_active');
+  searchInput.classList.remove('search__input_active');
+  searchCloseBtn.classList.remove('search__close-btn_active');
+})
+
 // custom select
 
 const element = document.querySelector('#broadcasts__select');

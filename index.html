@@ -2,8 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Радио W-Wawe</title>
   <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
@@ -34,37 +33,47 @@
       <nav class="header-center__top-nav nav">
         <ul class="nav__top-list flex list-reset">
           <li class="nav__top-item">
-            <a href="#podcasts" class="nav__top-link">Подкасты</a>
+            <a href="#podcasts" class="nav__top-link nav__link">Подкасты</a>
           </li>
 
           <li class="nav__top-item">
-            <a href="#broadcasts" class="nav__top-link">Передачи</a>
+            <a href="#broadcasts" class="nav__top-link nav__link">Передачи</a>
           </li>
 
           <li class="nav__top-item">
-            <a href="#guests" class="nav__top-link">Гости</a>
+            <a href="#guests" class="nav__top-link nav__link">Гости</a>
           </li>
 
           <li class="nav__top-item">
-            <a href="#playlists" class="nav__top-link">Плейлисты</a>
+            <a href="#playlists" class="nav__top-link nav__link">Плейлисты</a>
           </li>
 
           <li class="nav__top-item">
-            <a href="#about" class="nav__top-link">О&nbsp;нас</a>
+            <a href="#about" class="nav__top-link nav__link">О&nbsp;нас</a>
           </li>
         </ul>
       </nav>
 
-      <div class="header-center__btns-wrap flex">
-        <button class="header-center__search-btn">
+      <div class="header-center__search-wrap search flex">
+        <input class="search__input" type="text" placeholder="Поиск по сайту">
+
+        <button class="search__search-btn" aria-label="Поиск">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M20.9999 21L16.6499 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </button>
 
-        <button class="header-center__login-btn">Вход</button>
+        <button class="search__close-btn" aria-label="Закрыть поиск">
+          <svg class="search__closed-img" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8.95386" y="7.30435" width="11.6645" height="2.33291" transform="rotate(45 8.95386 7.30435)" fill="#121723"/>
+            <rect x="7.30432" y="15.5524" width="11.6645" height="2.33291" transform="rotate(-45 7.30432 15.5524)" fill="#121723"/>
+            <circle cx="12" cy="12" r="11" stroke="#121723" stroke-width="2"/>
+          </svg>
+        </button>
       </div>
+
+      <button class="header-center__login-btn" aria-label="Логин">Вход</button>
     </div>
   </section>
 
@@ -73,27 +82,27 @@
       <nav class="header-bottom__nav nav">
         <ul class="nav__bottom-list flex list-reset">
           <li class="nav__bottom-item">
-            <a href="#" class="nav__bottom-link">Новости</a>
+            <a href="#" class="nav__bottom-link nav__link">Новости</a>
           </li>
 
           <li class="nav__bottom-item">
-            <a href="#" class="nav__bottom-link">Блоги</a>
+            <a href="#" class="nav__bottom-link nav__link">Блоги</a>
           </li>
 
           <li class="nav__bottom-item">
-            <a href="#" class="nav__bottom-link">Топы</a>
+            <a href="#" class="nav__bottom-link nav__link">Топы</a>
           </li>
 
           <li class="nav__bottom-item">
-            <a href="#" class="nav__bottom-link">Опросы</a>
+            <a href="#" class="nav__bottom-link nav__link">Опросы</a>
           </li>
 
           <li class="nav__bottom-item">
-            <a href="#" class="nav__bottom-link">Рейтинги</a>
+            <a href="#" class="nav__bottom-link nav__link">Рейтинги</a>
           </li>
 
           <li class="nav__bottom-item">
-            <a href="#" class="nav__bottom-link">Рекламы</a>
+            <a href="#" class="nav__bottom-link nav__link">Рекламы</a>
           </li>
         </ul>
       </nav>
@@ -102,7 +111,7 @@
         <div class="header-bottom__broadcast-left flex">
           <div class="play-icon play-icon_desc">
             <button class="play-icon__btn">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="play-icon__img" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z" fill="#A1A6B4"/>
               </svg>
             </button>
@@ -118,7 +127,7 @@
         <div class="header-bottom__broadcast-right flex">
           <div class="play-icon play-icon_desc">
             <button class="play-icon__btn">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="play-icon__img" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z" fill="#A1A6B4"/>
               </svg>
             </button>
@@ -140,7 +149,7 @@
 
       <div class="play-icon play-icon_768">
         <button class="play-icon__btn">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="play-icon__img" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z" fill="#A1A6B4"/>
           </svg>
         </button>
@@ -169,7 +178,7 @@
         <h1 class="hero__title">Радио <span class="hero__title_ital">W-Wawe</span></h1>
 
         <p class="hero__text">
-          Привет, на&nbsp;связи W-Wawe! Раньше мы&nbsp;были изданием, а&nbsp;теперь пробуем себя в&nbsp;разоворном жанре. Говорим о&nbsp;музыке, политике, истории, науке и&nbsp;культуре. Здесь, помимо прямого эфира&nbsp;— архив передач и&nbsp;многое другое:)
+          Привет, на&nbsp;связи W-Wawe! Раньше мы&nbsp;были изданием, а&nbsp;теперь пробуем себя в&nbsp;разговорном жанре. Говорим о&nbsp;музыке, политике, истории, науке и&nbsp;культуре. Здесь, помимо прямого эфира&nbsp;— архив передач и&nbsp;многое другое:)
         </p>
 
         <button class="hero__btn btn">Слушать эфир</button>
@@ -1970,42 +1979,46 @@
         </ul>
       </div>
 
-      <nav class="footer-top__nav">
-        <ul class="footer-top__nav-list list-reset">
-          <li class="footer-top__nav-item">
-            <a href="#podcasts" class="footer-top__nav-link">Подкасты</a>
+      <nav class="footer-top__nav nav flex">
+        <ul class="nav__footer-list list-reset">
+          <li class="nav__footer-item">
+            <a href="#podcasts" class="nav__footer-link nav__link">Подкасты</a>
           </li>
 
-          <li class="footer-top__nav-item">
-            <a href="#broadcasts" class="footer-top__nav-link">Передачи</a>
+          <li class="nav__footer-item">
+            <a href="#broadcasts" class="nav__footer-link nav__link">Передачи</a>
           </li>
 
-          <li class="footer-top__nav-item">
-            <a href="#guests" class="footer-top__nav-link">Гости</a>
+          <li class="nav__footer-item">
+            <a href="#guests" class="nav__footer-link nav__link">Гости</a>
+          </li>
+        </ul>
+
+        <ul class="nav__footer-list list-reset">
+          <li class="nav__footer-item">
+            <a href="#playlists" class="nav__footer-link nav__link">Плейлисты</a>
           </li>
 
-          <li class="footer-top__nav-item">
-            <a href="#playlists" class="footer-top__nav-link">Плейлисты</a>
+          <li class="nav__footer-item">
+            <a href="#" class="nav__footer-link nav__link">Сетка</a>
           </li>
 
-          <li class="footer-top__nav-item">
-            <a href="#" class="footer-top__nav-link">Сетка</a>
+          <li class="nav__footer-item">
+            <a href="#about" class="nav__footer-link nav__link">О&nbsp;нас</a>
+          </li>
+        </ul>
+
+        <ul class="nav__footer-list list-reset">
+          <li class="nav__footer-item">
+            <a href="#" class="nav__footer-link nav__link">Новости</a>
           </li>
 
-          <li class="footer-top__nav-item">
-            <a href="#about" class="footer-top__nav-link">О&nbsp;нас</a>
+          <li class="nav__footer-item">
+            <a href="#" class="nav__footer-link nav__link">Блоги</a>
           </li>
 
-          <li class="footer-top__nav-item">
-            <a href="#" class="footer-top__nav-link">Новости</a>
-          </li>
-
-          <li class="footer-top__nav-item">
-            <a href="#" class="footer-top__nav-link">Блоги</a>
-          </li>
-
-          <li class="footer-top__nav-item">
-            <a href="#" class="footer-top__nav-link">Топы</a>
+          <li class="nav__footer-item">
+            <a href="#" class="nav__footer-link nav__link">Топы</a>
           </li>
         </ul>
       </nav>

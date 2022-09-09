@@ -75,6 +75,7 @@ img {
 }
 
 a {
+  outline: none;
   text-decoration: none;
   color: initial;
 }
@@ -117,6 +118,48 @@ a {
   padding: 94px 0;
 }
 
+/*nav__link effects*/
+
+.nav__link {
+  position: relative;
+  z-index: 10;
+  transition: color 0.2s ease-in-out,
+              background-color 0.2s ease-in-out;
+}
+
+.nav__link::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  bottom: -3px;
+  left: -6px;
+  right: -6px;
+  z-index: -10;
+  background-color: #AA9DFA;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.nav__link:focus {
+  color: #fff;
+}
+
+.nav__link:focus::before {
+  opacity: 1;
+}
+
+.nav__link:hover {
+  color: #6D31EE;
+}
+
+.nav__link:active {
+  color: #4F28A5;
+}
+
+.nav__link:active::before {
+  opacity: 0;
+}
+
 /*header*/
 /*header-top*/
 .header-top__container {
@@ -125,9 +168,14 @@ a {
 
 /*header-center*/
 .header-center__container {
+  position: relative;
   align-items: center;
   padding-top: 20px;
   padding-bottom: 16px;
+}
+
+.header-center__logo-link {
+  margin-right: 80px;
 }
 
 .header-center__logo-img {
@@ -135,7 +183,7 @@ a {
 }
 
 .header-center__top-nav {
-  margin: 0 auto;
+  margin-right: auto;
 }
 
 .nav__top-list {
@@ -151,17 +199,85 @@ a {
   color: #121723;
 }
 
-.header-center__btns-wrap {
-  align-items: center;
+/*search*/
+.search {
+  position: absolute;
+  right: 143px;
+  width: 24px;
+  transition: width 0.2s ease-in-out;
 }
 
-.header-center__search-btn {
-  margin-right: 20px;
+.search_active {
+  width: clamp(200px, 67%, 750px);
+  z-index: 20;
+  background-color: #fff;
+}
+
+.search__input {
+  display: none;
+  padding-bottom: 2px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #6D31EE;
+  outline: none;
+  font: var(--font400_16_16);
+  color: #A1A6B4;
+}
+
+.search__search-btn, .search__close-btn {
   padding: 0;
+  outline: none;
   font-size: 0;
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+.search__search-btn path {
+  transition: stroke 0.2s ease-in-out;
+}
+
+.search__search-btn:focus path,
+.search__search-btn:hover path {
+  stroke: #AA9DFA;
+}
+
+.search__search-btn:active path {
+  stroke: #4F28A5;
+}
+
+.search__close-btn {
+  display: none;
+  margin-left: 10px;
+}
+
+.search__close-btn circle,
+.search__close-btn rect {
+  transition: stroke 0.2s ease-in-out,
+              fill 0.2s ease-in-out;
+}
+
+.search__close-btn:focus rect,
+.search__close-btn:hover rect {
+  fill: #AA9DFA;
+}
+.search__close-btn:focus circle,
+.search__close-btn:hover circle {
+  stroke: #AA9DFA;
+}
+
+.search__close-btn:active rect {
+  fill: #4F28A5;
+}
+
+.search__close-btn:active circle {
+  stroke: #4F28A5;
+}
+
+.search__search-btn_active,
+.search__close-btn_active,
+.search__input_active {
+  display: block;
 }
 
 .header-center__login-btn {
@@ -173,6 +289,24 @@ a {
   color: #121723;
   background-color: transparent;
   cursor: pointer;
+  transition: color 0.2s ease-in-out,
+              background-color 0.2s ease-in-out,
+              border-color 0.2s ease-in-out;
+}
+
+.header-center__login-btn:focus {
+  background-color: #AA9DFA;
+}
+
+.header-center__login-btn:hover {
+  color: #fff;
+  background-color: #121723;
+}
+
+.header-center__login-btn:active {
+  border-color: #4F28A5;
+  color: #fff;
+  background-color: #4F28A5;
 }
 
 /*header-bottom*/
@@ -215,6 +349,22 @@ a {
 
 .play-icon {
   font-size: 0;
+}
+
+.play-icon path {
+  transition: fill 0.2s ease-in-out;
+}
+
+.play-icon__btn:focus path {
+  fill: #AA9DFA;
+}
+
+.play-icon__btn:hover path {
+  fill: #6D31EE;
+}
+
+.play-icon__btn:active path {
+  fill: #4F28A5;
 }
 
 .play-icon_desc {
@@ -1306,18 +1456,23 @@ a {
 }
 
 /*footer-top__nav*/
-.footer-top__nav-list {
+.footer-top__nav {
+  justify-content: space-between;
+  max-width: 445px;
+  width: 100%;
+}
+
+.nav__footer-list {
   margin-bottom: -20px;
-  column-count: 3;
-  column-gap: 125px;
+  font-size: 0;
 }
 
-.footer-top__nav-item {
+.nav__footer-item {
   margin-bottom: 20px;
-  width: fit-content;
+  font-size: 0;
 }
 
-.footer-top__nav-link {
+.nav__footer-link {
   font: var(--font400_16_16);
   color: #fff;
 }
@@ -1329,7 +1484,8 @@ a {
 }
 
 .footer-bottom__trademark-img {
-  margin-bottom: 10px;
+  margin-bottom: 3px;
+  width: 100%;
 }
 
 .footer-bottom-span-wrap {

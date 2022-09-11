@@ -17,6 +17,22 @@ searchCloseBtn.addEventListener('click', function () {
   searchCloseBtn.classList.remove('search__close-btn_active');
 })
 
+//play-btn
+
+const playBtn = document.querySelector('.audio__play-btn');
+const pauseBtn = document.querySelector('.audio__pause-btn');
+
+playBtn.addEventListener('click', function () {
+  playBtn.classList.remove('audio-btn_active');
+  pauseBtn.classList.add('audio-btn_active');
+})
+
+pauseBtn.addEventListener('click', function () {
+  pauseBtn.classList.remove('audio-btn_active');
+  playBtn.classList.add('audio-btn_active');
+})
+
+
 // custom select
 
 const element = document.querySelector('#broadcasts__select');

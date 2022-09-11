@@ -347,36 +347,41 @@ a {
   border-right: 1px solid #E6E8EC;
 }
 
-.play-icon {
+.audio {
   font-size: 0;
 }
 
-.play-icon path {
+.audio path {
   transition: fill 0.2s ease-in-out;
 }
 
-.play-icon__btn:focus path {
+.audio-btn:focus path {
   fill: #AA9DFA;
 }
 
-.play-icon__btn:hover path {
+.audio-btn:hover path {
   fill: #6D31EE;
 }
 
-.play-icon__btn:active path {
+.audio-btn:active path {
   fill: #4F28A5;
 }
 
-.play-icon_desc {
+.audio_desc {
   margin-right: 10px;
 }
 
-.play-icon__btn {
+.audio-btn {
+  display: none;
   padding: 0;
   border: none;
   outline: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+.audio-btn_active {
+  display: block;
 }
 
 .header-bottom__broadcast-text-wrap {
@@ -420,7 +425,7 @@ a {
   color: #A1A6B4;
 }
 
-.play-icon_768, .header-bottom__on-airth {
+.audio_768, .header-bottom__on-airth {
   display: none;
 }
 

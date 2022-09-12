@@ -457,14 +457,31 @@ a {
 }
 
 .hero__btn {
-  padding: 25px 54px;
-  border: none;
+  padding: 23px 52px;
+  border: 2px solid #6D31EE;
   border-radius: 40px;
   outline: none;
   font: var(--font500_20_20);
   color: #fff;
   background-color: #6D31EE;
   cursor: pointer;
+  transition: background-color 0.2s ease-in-out,
+              border-color 0.2s ease-in-out;
+}
+
+.hero__btn:focus {
+  border-color: #4F28A5;
+  background-color: #AA9DFA;
+}
+
+.hero__btn:hover {
+  border-color: #AA9DFA;
+  background-color: #AA9DFA;
+}
+
+.hero__btn:active {
+  border-color: #4F28A5;
+  background-color: #4F28A5;
 }
 
 .hero__picture {
@@ -561,15 +578,63 @@ a {
   border-top: 1px solid #E6E8EC;
 }
 
-.podcasts__summary, .podcasts__like {
+.podcasts__like-btn, .podcasts__share-btn {
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+.podcasts__like-btn span, .podcasts__share-btn span {
+  transition: color 0.2s ease-in-out;
+}
+
+.podcasts__like-btn path, .podcasts__share-btn path {
+  transition: fill 0.2s ease-in-out;
+}
+
+.podcasts__like-btn:focus, .podcasts__share-btn:focus {
+  background-color: #AA9DFA;
+}
+
+.podcasts__like-btn:focus span, .podcasts__share-btn:focus span {
+  color: #fff;
+}
+
+.podcasts__like-btn:focus path, .podcasts__share-btn:focus path {
+  fill: #fff;
+}
+
+.podcasts__like-btn:hover span, .podcasts__share-btn:hover span {
+  color: #6D31EE;
+}
+
+.podcasts__like-btn:hover path, .podcasts__share-btn:hover path {
+  fill: #6D31EE;
+}
+
+.podcasts__like-btn:active, .podcasts__share-btn:active {
+  background-color: transparent;
+}
+
+.podcasts__like-btn:active span, .podcasts__share-btn:active span {
+  color: #4F28A5;
+}
+
+.podcasts__like-btn:active path, .podcasts__share-btn:active path {
+  fill: #4F28A5;
+}
+
+.podcasts__summary, .podcasts__like-btn {
   margin-right: 30px;
 }
 
-.podcasts__summary, .podcasts__like, .podcasts__share {
+.podcasts__summary, .podcasts__like-btn, .podcasts__share-btn {
   display: flex;
 }
 
-.podcasts__summary svg, .podcasts__like svg, .podcasts__share svg {
+.podcasts__summary svg, .podcasts__like-btn svg, .podcasts__share-btn svg {
   margin-right: 6px;
 }
 
@@ -579,6 +644,7 @@ a {
 }
 
 .play-btn {
+  display: none;
   padding: 0;
   border: none;
   border-radius: 100%;
@@ -587,6 +653,56 @@ a {
   cursor: pointer;
   font-size: 0;
   overflow: hidden;
+}
+
+.play-btn_active {
+  display: block;
+}
+
+.play-btn svg, .play-btn circle, .play-btn path,
+.play-btn rect {
+  transition: stroke 0.2s ease-in-out,
+              fill 0.2s ease-in-out;
+}
+
+.play-btn:focus circle{
+  stroke: #AA9DFA;
+}
+
+.play-btn:focus path {
+  fill: #AA9DFA;
+}
+
+.play-btn:focus rect {
+  fill: #AA9DFA;
+}
+
+.play-btn:hover circle{
+  stroke: #6D31EE;
+}
+
+.play-btn:hover path {
+  fill: #6D31EE;
+}
+
+.play-btn:hover rect {
+  fill: #6D31EE;
+}
+
+.play-btn:active circle{
+  stroke: #4F28A5;
+}
+
+.play-btn:active circle{
+  fill: #4F28A5;
+}
+
+.play-btn:active path {
+  fill: #fff;
+}
+
+.play-btn:active rect {
+  fill: #fff;
 }
 
 .podcasts__more-btn {

@@ -17,19 +17,46 @@ searchCloseBtn.addEventListener('click', function () {
   searchCloseBtn.classList.remove('search__close-btn_active');
 })
 
-//play-btn
+//play-btn (header section)
 
-const playBtn = document.querySelector('.audio__play-btn');
-const pauseBtn = document.querySelector('.audio__pause-btn');
+const playBtn = document.querySelectorAll('.audio__play-btn');
+const pauseBtn = document.querySelectorAll('.audio__pause-btn');
 
-playBtn.addEventListener('click', function () {
-  playBtn.classList.remove('audio-btn_active');
-  pauseBtn.classList.add('audio-btn_active');
+playBtn.forEach(function (btn) {
+  btn.addEventListener('click', function (data) {
+    const path = data.currentTarget.dataset.path;
+    data.currentTarget.classList.remove('audio-btn_active');
+    document.querySelector(`[data-target = "${path}"]`).classList.add('audio-btn_active');
+  })
 })
 
-pauseBtn.addEventListener('click', function () {
-  pauseBtn.classList.remove('audio-btn_active');
-  playBtn.classList.add('audio-btn_active');
+pauseBtn.forEach(function (btn) {
+  btn.addEventListener('click', function (data) {
+    const target = data.currentTarget.dataset.target;
+    btn.classList.remove('audio-btn_active');
+    document.querySelector(`[data-path = "${target}"]`).classList.add('audio-btn_active');
+  })
+})
+
+//play-btn (podcasts section)
+
+const podcastPlayBtn = document.querySelectorAll('.podcasts__play-btn');
+const podcastPauseBtn = document.querySelectorAll('.podcasts__pause-btn');
+
+podcastPlayBtn.forEach(function (btn) {
+  btn.addEventListener('click', function (data) {
+    const path = data.currentTarget.dataset.path;
+    btn.classList.remove('play-btn_active');
+    document.querySelector(`[data-target = "${path}"]`).classList.add('play-btn_active');
+  })
+})
+
+podcastPauseBtn.forEach(function (btn) {
+  btn.addEventListener('click', function (data) {
+    const target = data.currentTarget.dataset.target;
+    btn.classList.remove('play-btn_active');
+    document.querySelector(`[data-path = "${target}"]`).classList.add('play-btn_active');
+  })
 })
 
 

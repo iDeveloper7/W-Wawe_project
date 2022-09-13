@@ -59,6 +59,28 @@ podcastPauseBtn.forEach(function (btn) {
   })
 })
 
+// more btn (podcasts section)
+
+const moreBtn = document.querySelector('.podcasts__more-btn');
+const podcastsItems = document.querySelectorAll('.podcasts__item');
+
+moreBtn.addEventListener('click', function () {
+  podcastsItems.forEach(function (el) {
+    el.classList.add('podcasts__item_visible');
+  })
+  moreBtn.classList.add('podcasts__more-btn_hidden');
+})
+
+//counter likes, shares (podcasts section)
+
+const counterBtns = document.querySelectorAll('.podcasts__counter-btn');
+
+counterBtns.forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    let countBtn = btn.textContent;
+    btn.textContent = String(parseInt(countBtn) + 1);
+  });
+})
 
 // custom select
 

@@ -294,16 +294,16 @@ a {
               border-color 0.2s ease-in-out;
 }
 
-.header-center__login-btn:focus {
+.btn-effects:focus {
   background-color: #AA9DFA;
 }
 
-.header-center__login-btn:hover {
+.btn-effects:hover {
   color: #fff;
   background-color: #121723;
 }
 
-.header-center__login-btn:active {
+.btn-effects:active {
   border-color: #4F28A5;
   color: #fff;
   background-color: #4F28A5;
@@ -517,6 +517,14 @@ a {
   background-color: #fff;
 }
 
+.podcasts__item:nth-child(n + 9) {
+  display: none;
+}
+
+.podcasts__item.podcasts__item_visible {
+  display: flex;
+}
+
 .podcasts__left-wrap {
   position: relative;
   max-height: 140px;
@@ -549,7 +557,7 @@ a {
 
 .podcasts__top-wrap {
   justify-content: space-between;
-  padding: 20px 30px;
+  padding: 21px 30px;
 }
 
 .podcasts__time {
@@ -574,74 +582,109 @@ a {
 }
 
 .podcasts__bottom-wrap {
-  padding: 9px 30px;
+  padding: 6px 30px;
   border-top: 1px solid #E6E8EC;
 }
 
-.podcasts__like-btn, .podcasts__share-btn {
-  padding: 0;
-  border: none;
-  outline: none;
-  background-color: transparent;
-  cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
-}
-.podcasts__like-btn span, .podcasts__share-btn span {
-  transition: color 0.2s ease-in-out;
+.podcasts__summary {
+  padding-top: 2px;
 }
 
-.podcasts__like-btn path, .podcasts__share-btn path {
-  transition: fill 0.2s ease-in-out;
-}
-
-.podcasts__like-btn:focus, .podcasts__share-btn:focus {
-  background-color: #AA9DFA;
-}
-
-.podcasts__like-btn:focus span, .podcasts__share-btn:focus span {
-  color: #fff;
-}
-
-.podcasts__like-btn:focus path, .podcasts__share-btn:focus path {
-  fill: #fff;
-}
-
-.podcasts__like-btn:hover span, .podcasts__share-btn:hover span {
-  color: #6D31EE;
-}
-
-.podcasts__like-btn:hover path, .podcasts__share-btn:hover path {
-  fill: #6D31EE;
-}
-
-.podcasts__like-btn:active, .podcasts__share-btn:active {
-  background-color: transparent;
-}
-
-.podcasts__like-btn:active span, .podcasts__share-btn:active span {
-  color: #4F28A5;
-}
-
-.podcasts__like-btn:active path, .podcasts__share-btn:active path {
-  fill: #4F28A5;
-}
-
-.podcasts__summary, .podcasts__like-btn {
+.podcasts__summary, .podcasts__counter-btn_like {
   margin-right: 30px;
 }
 
-.podcasts__summary, .podcasts__like-btn, .podcasts__share-btn {
+.podcasts__summary, .podcasts__counter-btn {
   display: flex;
 }
 
-.podcasts__summary svg, .podcasts__like-btn svg, .podcasts__share-btn svg {
+.podcasts__summary svg, .podcasts__counter-btn svg {
   margin-right: 6px;
 }
 
-.podcasts__summary-count, .podcasts__like-count, .podcasts__share-count {
+.podcasts__summary-count {
   font: var(--font400_16_16);
   color: #A1A6B4;
 }
+
+.podcasts__counter-btn {
+  padding: 2px;
+  border: none;
+  outline: none;
+  font: var(--font400_16_16);
+  color: #A1A6B4;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out,
+              color 0.2s ease-in-out,
+              background 0.2s ease-in-out;
+}
+
+.podcasts__counter-btn_like {
+  padding-left: 19px;
+  background: url("../img/podcasts-like-def.svg") left center no-repeat;
+}
+
+.podcasts__counter-btn_share {
+  padding-left: 18px;
+  background: url("../img/podcasts-share-def.svg") left center no-repeat;
+}
+
+.podcasts__counter-btn_like:focus {
+  background: url("../img/podcasts-like-focus.svg") left center no-repeat;
+}
+
+.podcasts__counter-btn_share:focus {
+  background: url("../img/podcasts-share-focus.svg") left center no-repeat;
+}
+
+.podcasts__counter-btn_like:hover {
+  background: url("../img/podcasts-like-hover.svg") left center no-repeat;
+}
+
+.podcasts__counter-btn_share:hover {
+  background: url("../img/podcasts-share-hover.svg") left center no-repeat;
+}
+
+.podcasts__counter-btn_like:active {
+  background: url("../img/podcasts-like-active.svg") left center no-repeat;
+}
+
+.podcasts__counter-btn_share:active {
+  background: url("../img/podcasts-share-active.svg") left center no-repeat;
+}
+
+.podcasts__counter-btn:focus {
+  color: #fff;
+  background-color: #AA9DFA;
+}
+
+.podcasts__counter-btn:hover {
+  color: #6D31EE;
+}
+
+.podcasts__counter-btn:active {
+  color: #4F28A5;
+}
+
+
+.podcasts__counter-btn_like:focus {
+  fill: #fff;
+}
+
+.podcasts__counter-btn:hover {
+  color: #6D31EE;
+}
+
+.podcasts__counter-btn:active {
+  color: #4F28A5;
+  background-color: transparent;
+}
+
+/*.podcasts__summary-count, .podcasts__count-btn_like, .podcasts__count-btn_share {*/
+/*  font: var(--font400_16_16);*/
+/*  color: #A1A6B4;*/
+/*}*/
 
 .play-btn {
   display: none;
@@ -715,6 +758,29 @@ a {
   color: #6D31EE;
   background-color: transparent;
   cursor: pointer;
+  transition: color 0.2s ease-in-out,
+              background-color 0.2s ease-in-out,
+              border-color 0.2s ease-in-out;
+}
+
+.podcasts__more-btn:focus {
+  color: #fff;
+  background-color: #AA9DFA;
+}
+
+.podcasts__more-btn:hover {
+  color: #fff;
+  background-color: #6D31EE;
+}
+
+.podcasts__more-btn:active {
+  color: #fff;
+  border-color: #4F28A5;
+  background-color: #4F28A5;
+}
+
+.podcasts__more-btn_hidden {
+  display: none;
 }
 
 /*broadcasts*/
@@ -849,16 +915,21 @@ a {
   height: 40px;
   border: 2px solid #121723;
   border-radius: 77px;
+  color: #121723;
+  font: var(--font500_16_16);
+  transition: color 0.2s ease-in-out,
+              background-color 0.2s ease-in-out,
+              border-color 0.2s ease-in-out;
 }
 
 .broadcasts__archive-icon {
   margin-right: 5px;
 }
 
-.broadcasts__archive-span {
-  color: #121723;
-  font: var(--font500_16_16);
-}
+/*.broadcasts__archive-span {*/
+/*  color: #121723;*/
+/*  font: var(--font500_16_16);*/
+/*}*/
 
 .broadcasts__descr {
   margin: 0;
@@ -913,8 +984,26 @@ a {
   font: var(--font400_16_16);
   font-style: italic;
   color: #121723;
-  background: url("../img/broadcasts Arrow 1.svg") right center no-repeat;
+  background: url("../img/broadcasts-arrow-def.svg") right center no-repeat;
+  transition: color 0.2s ease-in-out,
+              background 0.2s ease-in-out;
 }
+
+.broadcasts__more-link:focus {
+  color: #fff;
+  background: url("../img/broadcasts-arrow-focus.svg") right center no-repeat #AA9DFA;
+}
+
+.broadcasts__more-link:hover {
+  color: #6D31EE;
+  background: url("../img/broadcasts-arrow-hover.svg") right center no-repeat;
+}
+
+.broadcasts__more-link:active {
+  color: #4F28A5;
+  background: url("../img/broadcasts-arrow-active.svg") right center no-repeat transparent;
+}
+
 
 /*broadcasts__footer*/
 .broadcasts__footer {

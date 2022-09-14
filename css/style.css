@@ -1067,8 +1067,55 @@ a {
   border-bottom: 1px solid #A1A6B4;
   border-left: none;
   border-right: none;
+  outline: none;
   background-color: transparent;
   cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+.accordion__btn circle,
+.accordion__btn span,
+.accordion__btn path {
+  transition: color 0.2s ease-in-out,
+              fill 0.2s ease-in-out,
+              stroke 0.2s ease-in-out;
+}
+
+
+.accordion__btn:focus {
+  background-color: #292E39;
+}
+
+.accordion__btn:focus circle {
+  fill: #4F28A5;
+}
+
+.accordion__btn:hover span {
+  color: #AA9DFA;
+}
+
+.accordion__btn:hover circle,
+.accordion__btn:hover path {
+  stroke: #AA9DFA;
+}
+
+.accordion__btn:active {
+  background-color: transparent;
+}
+
+.accordion__btn:active circle {
+  stroke: #AA9DFA;
+}
+
+.accordion__btn:active circle {
+  fill: #AA9DFA;
+}
+
+.accordion__btn:active path {
+  stroke: #fff;
+}
+
+.accordion__btn:active {
+  border-color: #AA9DFA;
 }
 
 .accordion__btn-text {
@@ -1138,6 +1185,30 @@ a {
   margin-right: 30px;
 }
 
+.footer-top__social-link path,
+.guests__social-link path,
+.guests__social-link rect {
+  transition: fill 0.2s ease-in-out;
+}
+
+.footer-top__social-link:focus path,
+.guests__social-link:focus path,
+.guests__social-link:focus rect {
+  fill: #AA9DFA;
+}
+
+.footer-top__social-link:hover path,
+.guests__social-link:hover path,
+.guests__social-link:hover rect {
+  fill: #6D31EE;
+}
+
+.footer-top__social-link:active path,
+.guests__social-link:active path,
+.guests__social-link:active rect {
+  fill: #4F28A5;
+}
+
 .guest__person-name {
   margin: 0 0 8px;
   font: var(--font500_20_20);
@@ -1157,6 +1228,27 @@ a {
   font: var(--font500_16_16);
   text-align: center;
   color: #AA9DFA;
+  transition: color 0.2s ease-in-out,
+              border-color 0.2s ease-in-out,
+              background-color 0.2s ease-in-out;
+}
+
+.guest__person-link:focus {
+  border-color: #6D31EE;
+  color: #fff;
+  background-color: #6D31EE;
+}
+
+.guest__person-link:hover {
+  border-color: #AA9DFA;
+  color: #fff;
+  background-color: #AA9DFA;
+}
+
+.guest__person-link:active {
+  border-color: #4F28A5;
+  color: #fff;
+  background-color: #4F28A5;
 }
 
 /*playlists*/
@@ -1220,6 +1312,17 @@ a {
   height: 26px;
   border: 2px solid #A1A6B4;
   border-radius: 100%;
+  outline: none;
+}
+
+.playlists__form-input:focus + .playlists__form-cust-input {
+  border-color: #6D31EE;
+  background-color: #D2D5DD;
+}
+
+.playlists__form-input:hover + .playlists__form-cust-input {
+  border-color: #6D31EE;
+  background-color: #fff;
 }
 
 .playlists__form-input + .playlists__form-cust-input::after {

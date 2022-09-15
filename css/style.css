@@ -1304,6 +1304,11 @@ a {
   color: #121723;
 }
 
+.playlists__form-cust-input {
+  transition: border-color 0.2s ease-in-out,
+              background-color 0.2s ease-in-out;
+}
+
 .playlists__form-input + .playlists__form-cust-input {
   position: absolute;
   top: 0;
@@ -1313,16 +1318,6 @@ a {
   border: 2px solid #A1A6B4;
   border-radius: 100%;
   outline: none;
-}
-
-.playlists__form-input:focus + .playlists__form-cust-input {
-  border-color: #6D31EE;
-  background-color: #D2D5DD;
-}
-
-.playlists__form-input:hover + .playlists__form-cust-input {
-  border-color: #6D31EE;
-  background-color: #fff;
 }
 
 .playlists__form-input + .playlists__form-cust-input::after {
@@ -1363,6 +1358,24 @@ a {
 
 .playlists__form-input:checked + .playlists__form-cust-input {
   border: none;
+}
+
+.playlists__form-cust-input:focus {
+  border-color: #6D31EE;
+  background-color: #D2D5DD;
+}
+
+.playlists__form-input:hover + .playlists__form-cust-input {
+  border-color: #6D31EE;
+  background-color: #fff;
+}
+
+.playlists__form-input:active + .playlists__form-cust-input::before {
+  opacity: 1;
+}
+
+.playlists__form-input:active + .playlists__form-cust-input::after {
+  opacity: 1;
 }
 
 .playlists__left-footer {
@@ -1409,6 +1422,8 @@ a {
   margin-bottom: 30px;
   max-width: 160px;
   width: 100%;
+  outline: none;
+  cursor: pointer;
 }
 
 .playlists__photo-wrap {
@@ -1428,20 +1443,100 @@ a {
   background-color: #121723;
 }
 
+.playlists__btn-wrap {
+  position: absolute;
+  top: 56px;
+  left: 56px;
+  font-size: 0;
+}
+
+.playlists__btn {
+  padding: 0;
+  border: none;
+  outline: none;
+  font-size: 0;
+  background-color: transparent;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.playlists__btn-visible {
+  transition: opacity 0.2s ease-in-out;
+}
+
+.playlists__photo-wrap::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #121723;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.playlists__card-item:focus .playlists__photo-wrap::after,
+.playlists__card-item:hover .playlists__photo-wrap::after,
+.playlists__card-item:active .playlists__photo-wrap::after {
+  opacity: 0.8;
+}
+
+.playlists__card-item:focus .playlists__btn-visible,
+.playlists__card-item:hover .playlists__btn-visible,
+.playlists__card-item:active .playlists__btn-visible {
+  opacity: 1;
+  /*background-color: transparent;*/
+}
+
+.playlists__card-item:focus .playlists__desc-wrap {
+  border-color: #AA9DFA;
+  background-color: #AA9DFA;
+}
+
+.playlists__card-item:focus .playlists__subtitle,
+.playlists__card-item:focus .playlists__desc-text {
+  color: #121723;
+}
+
+.playlists__card-item:hover .playlists__desc-wrap {
+  border-color: #6D31EE;
+  background-color: #6D31EE;
+}
+
+.playlists__card-item:hover .playlists__subtitle,
+.playlists__card-item:hover .playlists__desc-text {
+  color: #fff;
+}
+
+.playlists__card-item:active .playlists__desc-wrap {
+  border-color: #4F28A5;
+  background-color: #4F28A5;
+}
+
+.playlists__card-item:active .playlists__subtitle,
+.playlists__card-item:active .playlists__desc-text {
+  color: #fff;
+}
+
 .playlists__desc-wrap {
   padding: 14px;
   border: 1px solid #E6E8EC;
+  transition: background-color 0.2s ease-in-out,
+              border-color 0.2s ease-in-out;
 }
 
 .playlists__subtitle {
   margin: 0;
   font: 500 16px / 16px "Muller", sans-serif;
   color: #121723;
+  transition: color 0.2s ease-in-out;
 }
 
 .playlists__desc-text {
   font: 400 12px / 12px "Muller", sans-serif;
   color: #A1A6B4;
+  transition: color 0.2s ease-in-out;
 }
 
 .playlists__left-footer_tablet {

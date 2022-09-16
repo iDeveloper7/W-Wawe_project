@@ -24,6 +24,12 @@ const pauseBtn = document.querySelectorAll('.audio__pause-btn');
 
 playBtn.forEach(function (btn) {
   btn.addEventListener('click', function (data) {
+    playBtn.forEach(function (playBtn) {
+      playBtn.classList.add('audio-btn_active');
+    })
+    pauseBtn.forEach(function (pauseBtn) {
+      pauseBtn.classList.remove('audio-btn_active');
+    })
     const path = data.currentTarget.dataset.path;
     data.currentTarget.classList.remove('audio-btn_active');
     document.querySelector(`[data-target = "${path}"]`).classList.add('audio-btn_active');
@@ -45,6 +51,12 @@ const podcastPauseBtn = document.querySelectorAll('.podcasts__pause-btn');
 
 podcastPlayBtn.forEach(function (btn) {
   btn.addEventListener('click', function (data) {
+    podcastPauseBtn.forEach(function (pauseBtn) {
+      pauseBtn.classList.remove('play-btn_active');
+    })
+    podcastPlayBtn.forEach(function (playBtn) {
+      playBtn.classList.add('play-btn_active');
+    })
     const path = data.currentTarget.dataset.path;
     btn.classList.remove('play-btn_active');
     document.querySelector(`[data-target = "${path}"]`).classList.add('play-btn_active');
@@ -151,7 +163,40 @@ tabsBtn.forEach(function (el) {
   })
 })
 
-//swiper
+//play btn (playlists section)
+
+const playlistsPlayBtn = document.querySelectorAll('.playlists__btn_play');
+const playlistsPauseBtn = document.querySelectorAll('.playlists__btn_pause');
+
+playlistsPlayBtn.forEach(function (btn) {
+  btn.addEventListener('click', function (data) {
+    const path = data.currentTarget.dataset.path;
+    playlistsPauseBtn.forEach(function (pauseBtn) {
+      pauseBtn.classList.remove('playlists__btn_visible');
+      pauseBtn.classList.add('playlists__btn_hidden');
+    })
+    playlistsPlayBtn.forEach(function (playBtn) {
+      playBtn.classList.add('playlists__btn_visible');
+      playBtn.classList.remove('playlists__btn_hidden');
+    })
+    btn.classList.remove('playlists__btn_visible');
+    btn.classList.add('playlists__btn_hidden');
+    document.querySelector(`[data-target = "${path}"]`).classList.add('playlists__btn_visible');
+    document.querySelector(`[data-target = "${path}"]`).classList.remove('playlists__btn_hidden');
+  })
+})
+
+playlistsPauseBtn.forEach(function (btn) {
+  btn.addEventListener('click', function (data) {
+    const target = data.currentTarget.dataset.target;
+    btn.classList.remove('playlists__btn_visible');
+    btn.classList.add('playlists__btn_hidden');
+    document.querySelector(`[data-path = "${target}"]`).classList.add('playlists__btn_visible');
+    document.querySelector(`[data-path = "${target}"]`).classList.remove('playlists__btn_hidden');
+  })
+})
+
+//swiper (about section)
 
 const swiper = new Swiper('.swiper', {
   slidesPerView: 4,
@@ -163,7 +208,7 @@ const swiper = new Swiper('.swiper', {
   }
 })
 
-// just validate
+// just validate (about section)
 
 const validation = new JustValidate('.about__form');
 

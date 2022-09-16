@@ -1419,15 +1419,14 @@ a {
 }
 
 .playlists__card-item {
+  position: relative;
   margin-bottom: 30px;
   max-width: 160px;
   width: 100%;
   outline: none;
-  cursor: pointer;
 }
 
 .playlists__photo-wrap {
-  position: relative;
   font-size: 0;
 }
 
@@ -1443,50 +1442,59 @@ a {
   background-color: #121723;
 }
 
-.playlists__btn-wrap {
+.playlists__btn {
   position: absolute;
   top: 56px;
   left: 56px;
-  font-size: 0;
-}
-
-.playlists__btn {
   padding: 0;
   border: none;
   outline: none;
   font-size: 0;
   background-color: transparent;
   opacity: 0;
+  z-index: 10;
+}
+
+.playlists__btn::before {
+  content: "";
+  position: absolute;
+  top: -56px;
+  left: -56px;
+  right: -56px;
+  bottom: -56px;
   cursor: pointer;
 }
 
-.playlists__btn-visible {
+.playlists__btn_hidden {
+  display: none;
+}
+
+.playlists__btn_visible {
   transition: opacity 0.2s ease-in-out;
 }
 
-.playlists__photo-wrap::after {
-  content: "";
+.playlists__grayscale {
   position: absolute;
   top: 0;
-  bottom: 0;
+  bottom: 64px;
   left: 0;
   right: 0;
+  font-size: 0;
   background-color: #121723;
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
 }
 
-.playlists__card-item:focus .playlists__photo-wrap::after,
-.playlists__card-item:hover .playlists__photo-wrap::after,
-.playlists__card-item:active .playlists__photo-wrap::after {
+.playlists__btn:focus::before .playlists__grayscale,
+.playlists__btn:hover::before .playlists__grayscale,
+.playlists__btn:active::before .playlists__grayscale {
   opacity: 0.8;
 }
 
-.playlists__card-item:focus .playlists__btn-visible,
-.playlists__card-item:hover .playlists__btn-visible,
-.playlists__card-item:active .playlists__btn-visible {
+.playlists__card-item:focus .playlists__btn_visible,
+.playlists__card-item:hover .playlists__btn_visible,
+.playlists__card-item:active .playlists__btn_visible {
   opacity: 1;
-  /*background-color: transparent;*/
 }
 
 .playlists__card-item:focus .playlists__desc-wrap {

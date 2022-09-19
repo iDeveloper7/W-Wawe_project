@@ -162,7 +162,23 @@ a {
 
 /*header*/
 /*header-top*/
+.header-top {
+  background-color: #E6E8EC;
+}
+
 .header-top__container {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
+
+.header-top__logo-link {
+  width: 112px;
+}
+
+.header-top__login-btn {
   display: none;
 }
 
@@ -280,7 +296,7 @@ a {
   display: block;
 }
 
-.header-center__login-btn {
+.login-btn {
   padding: 12px 32px;
   border: 2px solid #121723;
   border-radius: 77px;
@@ -469,17 +485,20 @@ a {
               border-color 0.2s ease-in-out;
 }
 
-.hero__btn:focus {
+.hero__btn:focus,
+.about__btn:focus {
   border-color: #4F28A5;
   background-color: #AA9DFA;
 }
 
-.hero__btn:hover {
+.hero__btn:hover,
+.about__btn:hover {
   border-color: #AA9DFA;
   background-color: #AA9DFA;
 }
 
-.hero__btn:active {
+.hero__btn:active,
+.about__btn:active {
   border-color: #4F28A5;
   background-color: #4F28A5;
 }
@@ -926,11 +945,6 @@ a {
   margin-right: 5px;
 }
 
-/*.broadcasts__archive-span {*/
-/*  color: #121723;*/
-/*  font: var(--font500_16_16);*/
-/*}*/
-
 .broadcasts__descr {
   margin: 0;
   font: 400 16px / 150% "Muller", sans-serif;
@@ -1074,47 +1088,56 @@ a {
 }
 .accordion__btn circle,
 .accordion__btn span,
-.accordion__btn path {
+.accordion__btn path,
+.swiper-btn circle,
+.swiper-btn span,
+.swiper-btn path {
   transition: color 0.2s ease-in-out,
               fill 0.2s ease-in-out,
               stroke 0.2s ease-in-out;
 }
 
 
-.accordion__btn:focus {
+.accordion__btn:focus,
+.swiper-btn:focus {
   background-color: #292E39;
 }
 
-.accordion__btn:focus circle {
+.accordion__btn:focus circle,
+.swiper-btn:focus circle {
   fill: #4F28A5;
 }
 
-.accordion__btn:hover span {
+.accordion__btn:hover span,
+.swiper-btn:hover span {
   color: #AA9DFA;
 }
 
 .accordion__btn:hover circle,
-.accordion__btn:hover path {
+.accordion__btn:hover path,
+.swiper-btn:hover circle,
+.swiper-btn:hover path {
   stroke: #AA9DFA;
 }
 
-.accordion__btn:active {
+.accordion__btn:active,
+.swiper-btn:active {
   background-color: transparent;
 }
 
-.accordion__btn:active circle {
+.accordion__btn:active circle,
+.swiper-btn:active circle {
   stroke: #AA9DFA;
-}
-
-.accordion__btn:active circle {
   fill: #AA9DFA;
 }
 
-.accordion__btn:active path {
+.accordion__btn:active path,
+.swiper-btn:active path {
   stroke: #fff;
 }
 
-.accordion__btn:active {
+.accordion__btn:active,
+.swiper-btn:active {
   border-color: #AA9DFA;
 }
 
@@ -1142,6 +1165,7 @@ a {
 .accordion__panel-list {
   margin-bottom: -15px;
   column-count: 4;
+  column-gap: 30px;
 }
 
 .accordion__panel-list_active {
@@ -1461,7 +1485,7 @@ a {
   top: -56px;
   left: -56px;
   right: -56px;
-  bottom: -56px;
+  bottom: -120px;
   cursor: pointer;
 }
 
@@ -1485,9 +1509,9 @@ a {
   transition: opacity 0.2s ease-in-out;
 }
 
-.playlists__btn:focus::before .playlists__grayscale,
-.playlists__btn:hover::before .playlists__grayscale,
-.playlists__btn:active::before .playlists__grayscale {
+.playlists__card-item:focus .playlists__grayscale,
+.playlists__card-item:hover .playlists__grayscale,
+.playlists__card-item:active .playlists__grayscale {
   opacity: 0.8;
 }
 
@@ -1528,6 +1552,7 @@ a {
 }
 
 .playlists__desc-wrap {
+  width: 100%;
   padding: 14px;
   border: 1px solid #E6E8EC;
   transition: background-color 0.2s ease-in-out,
@@ -1606,6 +1631,9 @@ a {
   font: 500 20px / 100% "Muller", sans-serif;
   color: #F0D288;
   background: url("../img/yandex-market.svg") left center no-repeat;
+  z-index: 5;
+  transition: color 0.2s ease-in-out,
+              background 0.2s ease-in-out;
 }
 
 .adv__link::before {
@@ -1617,6 +1645,36 @@ a {
   bottom: -25px;
   border: 2px solid #F0D288;
   border-radius: 100px;
+  transition: background-color 0.2s ease-in-out,
+              border-color 0.2s ease-in-out;
+}
+
+.adv__link:focus {
+  color: #121723;
+}
+
+.adv__link:focus::before {
+  background-color: #bb973e;
+  z-index: -5;
+}
+
+.adv__link:hover {
+  color: #121723;
+}
+
+.adv__link:hover::before {
+  background-color: #F0D288;
+  z-index: -5;
+}
+
+.adv__link:active {
+  color: #121723;
+  background: url("../img/yandex-market-active.svg") left center no-repeat;
+}
+
+.adv__link:active::before {
+  border-color: #bb973e;
+  background-color: #bb973e;
 }
 
 /*about*/
@@ -1684,6 +1742,10 @@ a {
   margin: 0;
   font: 400 16px / 24px "Muller", sans-serif;
   color: #A1A6B4;
+}
+
+.swiper-btn {
+  outline: none;
 }
 
 .swiper-button-prev, .swiper-rtl .swiper-button-next {
@@ -1772,22 +1834,49 @@ a {
   background-color: transparent;
 }
 
+.about__input-style {
+  outline: none;
+  transition: border-color 0.2s ease-in-out,
+              color 0.2s ease-in-out,
+              background-color 0.2s ease-in-out;
+}
+
+.about__input-style:focus {
+  border-color: #AA9DFA;
+  background-color: #292E39;
+}
+
+.about__input-style:hover {
+  border-color: #fff;
+  background-color: #292E39;
+}
+
+.about__input-style:active {
+  border-color: #fff;
+  color: #fff;
+  background-color: transparent;
+}
+
 .about__btn {
   display: block;
   margin-bottom: 28px;
   padding: 25px 54px;
-  border: none;
+  border: 2px solid #6D31EE;
   border-radius: 40px;
+  outline: none;
   font: var(--font500_20_20);
   color: #fff;
   background-color: #6D31EE;
   cursor: pointer;
+  transition: background-color 0.2s ease-in-out,
+              border-color 0.2s ease-in-out;
 }
 
 .about__check-label {
   position: relative;
   align-items: center;
   display: inline-block;
+  cursor: pointer;
 }
 
 .about__check-text {
@@ -1807,6 +1896,20 @@ a {
   width: 14px;
   height: 14px;
   border: 1px solid #fff;
+  outline: none;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.about__check-cust-input:focus {
+  border-color: #AA9DFA;
+}
+
+.about__check-label:hover .about__check-cust-input {
+  border-color: #6D31EE;
+}
+
+.about__check-label:active .about__check-cust-input {
+  border-color: #4F28A5;
 }
 
 .about__check-input + .about__check-cust-input::after {

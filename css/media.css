@@ -1,0 +1,166 @@
+@media (max-width: 1400px) {
+  /*global*/
+
+  .container {
+    max-width: 855px;
+  }
+
+  /*header*/
+  /*header-top*/
+  .header-top__container {
+    display: flex;
+  }
+
+  /*header-center*/
+  .header-center__logo-link {
+    display: none;
+  }
+
+  .search_active {
+    width: clamp(200px, 82%, 1000px);
+  }
+
+  /*header-bottom*/
+  .header-bottom__container {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .header-bottom__nav {
+    margin-right: 30px;
+  }
+
+  .nav__bottom-item:not(:last-child) {
+    margin-right: 28px;
+  }
+
+  .header-bottom__broadcast-left, .header-bottom__broadcast-right {
+    padding-right: 24px;
+  }
+
+  .header-bottom__age-wrap {
+    display: none;
+  }
+
+  /*hero*/
+  .hero {
+    padding-bottom: 90px;
+  }
+
+  .hero__left-wrap {
+    max-width: 539px;
+    width: 100%;
+  }
+
+  .hero__text {
+    margin: 0 0 20px;
+  }
+
+  .hero__picture {
+    bottom: 0;
+  }
+
+  /*broadcasts*/
+  /*broadcasts-left*/
+  .broadcasts__left-wrap {
+    width: calc((100% - 2 * 30px) / 3);
+  }
+
+  .broadcasts__top-left {
+    margin-bottom: 223px;
+  }
+
+  /*broadcasts-right*/
+  .broadcasts__right-wrap {
+    width: calc((100% - 30px) - ((100% - 2 * 30px) / 3));
+  }
+
+  .broadcasts__item {
+    margin-bottom: 27px;
+    width: calc((100% - 30px) / 2);
+  }
+
+  /*guests*/
+  .guests__header {
+    max-width: 536px;
+  }
+
+  .accordion {
+    max-width: 540px;
+  }
+
+  .accordion__panel-list {
+    column-count: 3;
+  }
+
+  .guests__person {
+    max-width: 255px;
+  }
+
+  /*playlists*/
+  /*playlists-left*/
+  .playlists__container {
+    flex-direction: column;
+    justify-content: initial;
+  }
+
+  .playlists__list {
+    margin-bottom: 11px;
+    column-count: 2;
+  }
+
+  .playlists__item {
+    margin: 0;
+    width: fit-content;
+  }
+
+  .playlists__left-footer_desc {
+    display: none;
+  }
+
+  /*playlists__card-list*/
+  .playlists__card-list {
+    width: 100%;
+  }
+
+  .playlists__card-item {
+    display: flex;
+    max-width: calc((100% - 2 * 30px) / 3);
+    min-height: 112px;
+    height: 100%;
+  }
+
+  .playlists__photo-wrap {
+    position: relative;
+  }
+
+  .playlists__country-wrap {
+    right: initial;
+    left: 0;
+  }
+
+  .playlists__btn {
+    top: 32px;
+    left: 32px;
+  }
+
+  .playlists__btn::before {
+    top: -32px;
+    left: -32px;
+    right: -174px;
+    bottom: -32px;
+  }
+
+  .playlists__grayscale {
+    bottom: 0;
+  }
+
+  .playlists__desc-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(100% - 112px);
+    padding: 0 0 0 10px;
+  }
+
+}

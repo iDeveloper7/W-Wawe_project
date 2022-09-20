@@ -187,7 +187,63 @@ a {
   position: relative;
   align-items: center;
   padding-top: 20px;
-  padding-bottom: 16px;
+  padding-bottom: 20px;
+}
+
+.burger {
+  display: none;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  outline: none;
+}
+
+.burger::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  bottom: -3px;
+  left: -3px;
+  right: -3px;
+  border: 1px solid #6D31EE;
+  opacity: 0;
+  transition: border-color 0.2s ease-in-out,
+              opacity 0.2s ease-in-out;
+}
+
+.burger:focus::before {
+  opacity: 1;
+}
+
+.burger:hover::before {
+  border-color: #AA9DFA;
+  opacity: 1;
+}
+
+.burger:active::before {
+  border-color: #4F28A5;
+  opacity: 1;
+}
+
+.burger__line {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 4px;
+  background-color: #6D31EE;
+}
+
+.burger__line:first-child {
+  top: 0;
+}
+
+.burger__line:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.burger__line:last-child {
+  bottom: 0;
 }
 
 .header-center__logo-link {
@@ -297,7 +353,7 @@ a {
 }
 
 .login-btn {
-  padding: 12px 32px;
+  padding: 10px 30px;
   border: 2px solid #121723;
   border-radius: 77px;
   outline: none;
@@ -1860,7 +1916,7 @@ a {
 .about__btn {
   display: block;
   margin-bottom: 28px;
-  padding: 25px 54px;
+  padding: 23px 52px;
   border: 2px solid #6D31EE;
   border-radius: 40px;
   outline: none;

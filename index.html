@@ -27,6 +27,12 @@
 
   <section class="header-center">
     <div class="container header-center__container flex">
+      <div class="burger" role="button" aria-label="Меню" tabindex="0">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </div>
+
       <a href="#" class="header-center__logo-link">
         <img class="header-center__logo-img" src="img/logo-header.svg" alt="Логотип Радио W-Wawe">
       </a>
@@ -103,7 +109,7 @@
           </li>
 
           <li class="nav__bottom-item">
-            <a href="#" class="nav__bottom-link nav__link">Рекламы</a>
+            <a href="#" class="nav__bottom-link nav__link">Реклама</a>
           </li>
         </ul>
       </nav>
@@ -179,13 +185,13 @@
       </div>
 
       <div class="audio audio_768">
-        <button class="audio__play-btn audio-btn audio-btn_active" data-target="3" aria-label="Воспроизведение">
+        <button class="audio__play-btn audio-btn audio-btn_active" data-path="3" aria-label="Воспроизведение">
           <svg class="audio__play-img" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z" fill="#A1A6B4"/>
           </svg>
         </button>
 
-        <button class="audio__pause-btn audio-btn" data-path="3" aria-label="Пауза">
+        <button class="audio__pause-btn audio-btn" data-target="3" aria-label="Пауза">
           <svg class="audio__pause-img" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_24531_3491)">
               <path d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0Z" fill="#A1A6B4"/>
@@ -1039,15 +1045,15 @@
       </div>
 
       <div class="broadcasts__footer">
-        <picture class="broadcasts__picture">
+        <picture class="broadcasts__left-picture">
           <source media="(max-width: 767px)" srcset="img/mic-small-320.png">
           <source media="(max-width: 1023px)" srcset="img/mic-small-768.png">
           <source media="(min-width: 1024px)" srcset="img/mic-small-desc.png">
-          <img class="broadcasts__img" src="img/mic-small-desc.png" alt="Микрофон">
+          <img class="broadcasts__left-img" src="img/mic-small-desc.png" alt="Микрофон">
         </picture>
 
         <div class="broadcasts__footer-text-wrap">
-          <a href="#" class="broadcasts__archive-link">Архив</a>
+          <a href="#" class="broadcasts__archive-link btn-effects flex">Архив</a>
 
           <p class="broadcasts__descr">
             В&nbsp;архив попадают все&nbsp;передачи, которые вы&nbsp;пропустили! Enjoy:)
@@ -2209,8 +2215,8 @@
             <picture class="about__picture">
               <source media="(max-width: 767px)" srcset="img/about-1-320.jpg">
               <source media="(max-width: 1023px)" srcset="img/about-1-desc.jpg">
-              <source media="(max-width: 1200px)" srcset="img/about-1-1024.jpg">
-              <source media="(min-width: 1201px)" srcset="img/about-1-desc.jpg">
+              <source media="(max-width: 1400px)" srcset="img/about-1-1024.jpg">
+              <source media="(min-width: 1401px)" srcset="img/about-1-desc.jpg">
               <img class="about__img" src="img/about-1-desc.jpg" alt="Дмитрий Гутенберг">
             </picture>
 
@@ -2223,8 +2229,8 @@
             <picture class="about__picture">
               <source media="(max-width: 767px)" srcset="img/about-2-320.jpg">
               <source media="(max-width: 1023px)" srcset="img/about-2-desc.jpg">
-              <source media="(max-width: 1200px)" srcset="img/about-2-1024.jpg">
-              <source media="(min-width: 1201px)" srcset="img/about-2-desc.jpg">
+              <source media="(max-width: 1400px)" srcset="img/about-2-1024.jpg">
+              <source media="(min-width: 1401px)" srcset="img/about-2-desc.jpg">
               <img class="about__img" src="img/about-2-desc.jpg" alt="Анна Васильева">
             </picture>
 
@@ -2237,8 +2243,8 @@
             <picture class="about__picture">
               <source media="(max-width: 767px)" srcset="img/about-3-320.jpg">
               <source media="(max-width: 1023px)" srcset="img/about-3-desc.jpg">
-              <source media="(max-width: 1200px)" srcset="img/about-3-1024.jpg">
-              <source media="(min-width: 1201px)" srcset="img/about-3-desc.jpg">
+              <source media="(max-width: 1400px)" srcset="img/about-3-1024.jpg">
+              <source media="(min-width: 1401px)" srcset="img/about-3-desc.jpg">
               <img class="about__img" src="img/about-3-desc.jpg" alt="Пётр Дмитриевский">
             </picture>
 
@@ -2251,8 +2257,8 @@
             <picture class="about__picture">
               <source media="(max-width: 767px)" srcset="img/about-4-320.jpg">
               <source media="(max-width: 1023px)" srcset="img/about-4-desc.jpg">
-              <source media="(max-width: 1200px)" srcset="img/about-4-1024.jpg">
-              <source media="(min-width: 1201px)" srcset="img/about-4-desc.jpg">
+              <source media="(max-width: 1400px)" srcset="img/about-4-1024.jpg">
+              <source media="(min-width: 1401px)" srcset="img/about-4-desc.jpg">
               <img class="about__img" src="img/about-4-desc.jpg" alt="Татьяна Флеганова">
             </picture>
 
@@ -2265,8 +2271,8 @@
             <picture class="about__picture">
               <source media="(max-width: 767px)" srcset="img/about-5-320.jpg">
               <source media="(max-width: 1023px)" srcset="img/about-5-desc.jpg">
-              <source media="(max-width: 1200px)" srcset="img/about-5-1024.jpg">
-              <source media="(min-width: 1201px)" srcset="img/about-5-desc.jpg">
+              <source media="(max-width: 1400px)" srcset="img/about-5-1024.jpg">
+              <source media="(min-width: 1401px)" srcset="img/about-5-desc.jpg">
               <img class="about__img" src="img/about-5-desc.jpg" alt="Фёдор Прокопьев">
             </picture>
 
@@ -2279,8 +2285,8 @@
             <picture class="about__picture">
               <source media="(max-width: 767px)" srcset="img/about-6-320.jpg">
               <source media="(max-width: 1023px)" srcset="img/about-6-desc.jpg">
-              <source media="(max-width: 1200px)" srcset="img/about-6-1024.jpg">
-              <source media="(min-width: 1201px)" srcset="img/about-6-desc.jpg">
+              <source media="(max-width: 1400px)" srcset="img/about-6-1024.jpg">
+              <source media="(min-width: 1401px)" srcset="img/about-6-desc.jpg">
               <img class="about__img" src="img/about-6-desc.jpg" alt="Светлана Кортнева">
             </picture>
 

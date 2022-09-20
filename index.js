@@ -198,14 +198,19 @@ playlistsPauseBtn.forEach(function (btn) {
 
 //swiper (about section)
 
-const swiper = new Swiper('.swiper', {
-  slidesPerView: 4,
+let swiper = new Swiper('.swiper', {
+  slidesPerView: 2,
   loop: true,
   spaceBetween: 30,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
-  }
+  },
+  breakpoints: {
+    1401: {
+      slidesPerView: 4,
+    },
+  },
 })
 
 // just validate (about section)

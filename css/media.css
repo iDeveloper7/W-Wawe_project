@@ -285,6 +285,10 @@
   }
 
   /*broadcasts*/
+  .broadcasts {
+    padding-bottom: 28px;
+  }
+
   .broadcasts__container {
     flex-direction: column;
   }
@@ -332,5 +336,88 @@
     display: flex;
     flex-direction: column;
   }
+
+  /*guests*/
+  .guests {
+    padding-bottom: 107px;
+  }
+
+  .guests__content-wrap {
+    flex-direction: column;
+  }
+
+  .guests__accordion {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+
+  .accordion__panel-item {
+    margin-bottom: 26px;
+  }
+
+  .guests__person {
+    max-width: 100%;
+  }
+
+  .guest__person-descr {
+    max-width: 398px;
+  }
+
+  /*playlists*/
+  /*playlists__left-wrap*/
+  .playlists__list {
+    margin-bottom: 20px;
+  }
+
+  /*playlists__card-list*/
+  .playlists__card-item {
+    max-width: calc((100% - 30px) / 2);
+  }
+
+  .playlists__item:not(:last-child) {
+    margin-bottom: 35px;
+  }
+
+  /*adv*/
+  .adv {
+    padding-top: 54px;
+    padding-bottom: 118px;
+  }
+
+  .adv__container {
+    flex-direction: column;
+  }
+
+  .adv__picture {
+    margin-bottom: 50px;
+    width: 100%;
+  }
+
+
+  .adv__right-wrap {
+    width: 100%;
+  }
+
+  .adv__title {
+    max-width: 380px;
+  }
+
+  /*about*/
+  .about__top-wrap {
+    flex-direction: column;
+  }
+
+  .about__top-text-wrap {
+    width: 100%;
+  }
+
+  .about__top-figures {
+    width: 100%;
+  }
+
+  .about__spiral-picture {
+    display: block;
+  }
+
 
 }

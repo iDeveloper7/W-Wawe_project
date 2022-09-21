@@ -196,6 +196,7 @@ a {
   width: 24px;
   height: 24px;
   outline: none;
+  cursor: pointer;
 }
 
 .burger::before {
@@ -215,14 +216,18 @@ a {
   opacity: 1;
 }
 
-.burger:hover::before {
-  border-color: #AA9DFA;
+.burger:hover .burger__line {
+  background-color: #AA9DFA;
   opacity: 1;
 }
 
-.burger:active::before {
-  border-color: #4F28A5;
+.burger:active .burger__line {
+  background-color: #4F28A5;
   opacity: 1;
+}
+
+.burger:active .burger::before {
+  border: none;
 }
 
 .burger__line {
@@ -231,6 +236,7 @@ a {
   height: 3px;
   border-radius: 4px;
   background-color: #6D31EE;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .burger__line:first-child {
@@ -1228,8 +1234,11 @@ a {
   padding: 25px 0;
 }
 
-.accordion__panel-btn {
+.accordion__panel-item {
   margin-bottom: 15px;
+}
+
+.accordion__panel-btn {
   padding: 0;
   border: none;
   font: var(--font400_16_16);

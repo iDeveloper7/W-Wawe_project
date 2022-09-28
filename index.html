@@ -1090,7 +1090,7 @@
             </h3>
 
             <div class="accordion__panel">
-              <ul class="accordion__panel-list list-reset accordion__panel-list_active" data-ultarget="one" style="transition-duration: 600ms; height: auto;">
+              <ul class="accordion__panel-list list-reset accordion__panel-list_active" data-ultarget="one" style="transition-duration: 80ms; height: auto;">
                 <li class="accordion__panel-item">
                   <button class="accordion__panel-btn" data-path="noname">Сергей Денисов</button>
                 </li>
@@ -2421,7 +2421,13 @@
 
   <section class="footer-bottom">
     <div class="footer-bottom__container">
-      <img class="footer-bottom__trademark-img" src="img/footer-spiral.svg" alt="Спираль">
+      <picture class="footer-bottom__picture">
+        <source media="(max-width: 767px)" srcset="img/footer-spiral-320.svg">
+        <source media="(max-width: 1023px)" srcset="img/footer-spiral-768.svg">
+        <source media="(max-width: 1400px)" srcset="img/footer-spiral-1024.svg">
+        <source media="(min-width: 1401px)" srcset="img/footer-spiral-desc.svg">
+        <img class="footer-bottom__trademark-img" src="img/footer-spiral-desc.svg" alt="Спираль">
+      </picture>
 
       <div class="footer-bottom-span-wrap flex">
         <span class="footer-bottom__trademark-span">W-WAVE ® 2021</span>

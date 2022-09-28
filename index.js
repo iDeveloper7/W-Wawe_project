@@ -106,6 +106,7 @@ const choices = new Choices(element, {
 
 //custom accordion
 new Accordion('.guests__accordion', {
+  duration: 80,
   elementClass: 'accordion__item',
   triggerClass: 'accordion__btn',
   panelClass: 'accordion__panel-list',

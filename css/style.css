@@ -104,7 +104,7 @@ a {
 }
 
 .subtitle {
-  font: 400 20px / 20px "Muller", sans-serif;
+  font: var(--font500_20_20);
 }
 
 .container {
@@ -507,6 +507,23 @@ a {
   display: none;
 }
 
+.on-airth__img-wrap {
+  margin-right: 5px;
+}
+
+.on-airth__bth {
+  align-items: center;
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.on-airth__text {
+  font: var(--font500_16_16);
+  color: #6D31EE;
+}
+
 /*hero*/
 .hero__container {
   position: relative;
@@ -611,6 +628,7 @@ a {
   max-height: 140px;
   max-width: 112px;
   width: 100%;
+  font-size: 0;
 }
 
 .podcasts__date-wrap {
@@ -650,6 +668,7 @@ a {
 
 .podcasts__name {
   margin: 0 0 4px;
+  font: var(--font400_20_20);
   color: #121723;
 }
 
@@ -761,11 +780,6 @@ a {
   color: #4F28A5;
   background-color: transparent;
 }
-
-/*.podcasts__summary-count, .podcasts__count-btn_like, .podcasts__count-btn_share {*/
-/*  font: var(--font400_16_16);*/
-/*  color: #A1A6B4;*/
-/*}*/
 
 .play-btn {
   display: none;
@@ -932,7 +946,6 @@ a {
   min-height: auto;
   border: none;
   border-radius: 10px;
-  font: var(--font400_16_16);
   background-color: #E6E8EC;
 }
 
@@ -974,7 +987,6 @@ a {
 }
 
 .broadcasts__option {
-  font: var(--font400_16_16);
   color: #A1A6B4;
 }
 
@@ -1225,13 +1237,12 @@ a {
 }
 
 .accordion__panel-list {
-  margin-bottom: -15px;
   column-count: 4;
   column-gap: 30px;
 }
 
 .accordion__panel-list_active {
-  padding: 25px 0;
+  padding: 20px 0;
 }
 
 .accordion__panel-item {
@@ -1643,7 +1654,7 @@ a {
 
 /*adv*/
 .adv {
-  padding-bottom: 141px;
+  padding-bottom: 137px;
   background-color: #292E39;
 }
 
@@ -1799,7 +1810,7 @@ a {
 }
 
 .about__subtitle {
-  margin: 0 0 8px;
+  margin: 0 0 5px;
   font-weight: 500;
   color: #fff;
 }
@@ -1893,11 +1904,11 @@ a {
 }
 
 .about__input {
-  padding: 25px 32px;
+  padding: 24px 32px;
   width: 100%;
   height: 100%;
   border: 1px solid #fff;
-  border-radius: 30px;
+  border-radius: 40px;
   font: var(--font400_20_20);
   color: #A1A6B4;
   background-color: transparent;

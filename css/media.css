@@ -60,6 +60,11 @@
     bottom: 0;
   }
 
+  /*podcasts*/
+  .podcasts {
+    padding-bottom: 92px;
+  }
+
   /*broadcasts*/
   /*broadcasts-left*/
   .broadcasts__left-wrap {
@@ -90,7 +95,16 @@
   }
 
   .accordion__panel-list {
+    margin-bottom: -13px;
     column-count: 3;
+  }
+
+  .accordion__panel-list_active {
+    padding: 30px 0;
+  }
+
+  .accordion__panel-item {
+    margin-bottom: 13px;
   }
 
   .guests__person {
@@ -193,6 +207,7 @@
 
   .about__top-wrap {
     justify-content: space-between;
+    margin-bottom: 25px;
   }
 
   .about__top-text-wrap {
@@ -205,10 +220,6 @@
 
   .about__spiral-picture {
     display: none;
-  }
-
-  .about__top-wrap {
-    margin-bottom: 28px;
   }
 
   .about__swiper {
@@ -357,11 +368,11 @@
   }
 
   .accordion__panel-list {
-    margin-bottom: -30px;
+    margin-bottom: -27px;
   }
 
   .accordion__panel-item {
-    margin-bottom: 29px;
+    margin-bottom: 27px;
   }
 
   .guests__person {
@@ -435,7 +446,7 @@
 
   /*swiper*/
   .about__swiper {
-    margin-bottom: 27px;
+    margin-bottom: 30px;
   }
 
   .swiper-button-next, .swiper-button-prev {
@@ -504,19 +515,62 @@
   .nav__footer-item {
     margin-bottom: 30px;
   }
-
-
 }
 
 @media (max-width: 767px) {
+  .swiper-btn,
+  .about__top-figures {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
   /*global*/
   .container {
     max-width: 286px;
   }
 
+  .section-offset {
+    padding: 54px 0;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font: 500 16px / 16px "Muller", sans-serif;
+  }
+
+  /*root*/
+  :root {
+    --font500_20_20: 500 16px / 16px "Muller", sans-serif;
+    --font400_16_16: 400 12px / 12px "Muller", sans-serif;
+    --font400_20_20: 400 16px / 16px "Muller", sans-serif;
+  }
+
+
   /*header*/
+  .header-top__container {
+    padding-top: 9px;
+    padding-bottom: 9px;
+  }
+
+  .login-btn {
+    padding: 8px 22px;
+  }
+
+  .header-top__logo-link {
+    width: 87px;
+  }
+
   .header-top__login-btn {
     display: block;
+  }
+
+  .header-center__container {
+    padding-top: 13px;
+    padding-bottom: 13px;
   }
 
   .header-center__login-btn {
@@ -524,7 +578,135 @@
   }
 
   .header-center__search-wrap {
-    right: 0;
+    right: 15px;
+  }
+
+  .search_active {
+    width: clamp(200px, 80%, 1000px);
+  }
+
+  .header-bottom__container {
+    justify-content: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .header-bottom__nav {
+    display: none;
+    margin-right: 0;
+  }
+
+  .audio_768 {
+    display: none;
+  }
+
+  .header-bottom__on-airth {
+    display: block;
+  }
+
+  /*hero*/
+  .hero {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .hero__title {
+    margin: 0 0 7px;
+    font-size: 32px;
+  }
+
+  .hero__text {
+    font-size: 14px;
+  }
+
+  .hero__btn {
+    padding: 15px 43px;
+  }
+
+  /*podcasts*/
+  .podcasts__title {
+    margin: 0 0 20px;
+  }
+
+  .podcasts__list {
+    margin-bottom: 0;
+  }
+
+  .podcasts__item {
+    flex-direction: column;
+  }
+
+  .podcasts__item:nth-child(n + 9) {
+    display: flex;
+  }
+
+  .podcasts__item:nth-child(n + 5) {
+    display: none;
+  }
+
+  .podcasts__item.podcasts__item_visible {
+    display: flex;
+  }
+
+  .podcasts__left-wrap {
+    max-width: initial;
+  }
+
+  .podcasts__date-wrap {
+    bottom: initial;
+    top: -1px;
+  }
+
+  .podcasts__top-wrap {
+    padding: 16px 10px 16px 16px;
+  }
+
+  .podcasts__time {
+    margin-bottom: 8px;
+  }
+
+  .podcasts__name {
+    margin: 0;
+  }
+
+  .play-btn_active {
+    transform: scale(0.8);
+  }
+
+  .podcasts__bottom-wrap {
+    padding: 5px 33px;
+  }
+
+  .podcasts__more-btn {
+    padding: 15px 28px;
+  }
+
+  /*broadcasts*/
+  .broadcasts__left-wrap {
+    width: 100%;
+  }
+
+  .broadcasts__top-left {
+    margin-bottom: 29px;
+  }
+
+  .broadcasts__title {
+    margin: 0 0 18px;
+  }
+
+  /*choices*/
+  .choices__inner,
+  .choices__list--dropdown .choices__item, .choices__list[aria-expanded] .choices__item {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+
+
+
+
+  .playlists {
+    display: none;
   }
 
 }

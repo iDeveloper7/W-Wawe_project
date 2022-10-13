@@ -879,6 +879,10 @@ a {
 }
 
 /*broadcasts*/
+.broadcasts {
+  position: relative;
+}
+
 .broadcasts__container {
   justify-content: space-between;
 }
@@ -1048,26 +1052,25 @@ a {
 }
 
 .broadcasts__article-bottom-wrap {
-  flex-direction: column;
+  flex-wrap: wrap;
   padding: 20px 16px;
+  min-height: 112px;
   border: 1px solid #E6E8EC;
 }
 
 .broadcasts__name {
-  align-self: flex-start;
   margin: 0 0 4px;
   color: #121723;
 }
 
 .broadcasts__time {
-  align-self: flex-start;
   margin: 0 0 20px;
   font: 400 12px / 12px "Muller";
   color: #A1A6B4;
 }
 
 .broadcasts__more-link {
-  align-self: flex-start;
+  align-self: flex-end;
   padding-right: 24px;
   font: var(--font400_16_16);
   font-style: italic;
@@ -1096,6 +1099,14 @@ a {
 /*broadcasts__footer*/
 .broadcasts__footer {
   display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 27px;
+  width: 100%;
+  border-top: 1px solid #E6E8EC;
 }
 
 /*guests*/
@@ -1242,11 +1253,11 @@ a {
 }
 
 .accordion__panel-list_active {
-  padding: 20px 0;
+  padding: 25px 0;
 }
 
 .accordion__panel-item {
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 }
 
 .accordion__panel-btn {
@@ -1369,6 +1380,7 @@ a {
 .playlists__form fieldset{
   margin: 0;
   padding: 0;
+  min-width: 0;
   border: none;
 }
 
@@ -1476,6 +1488,17 @@ a {
 
 .playlists__form-input:active + .playlists__form-cust-input::after {
   opacity: 1;
+}
+
+.playlists__list-genre {
+  display: none;
+  position: absolute;
+  top: 114px;
+  left: 30px;
+}
+
+.playlists__item-genre {
+  width: auto;
 }
 
 .playlists__left-footer {
@@ -1637,7 +1660,7 @@ a {
 
 .playlists__subtitle {
   margin: 0;
-  font: 500 16px / 16px "Muller", sans-serif;
+  font: var(--font500_16_16);
   color: #121723;
   transition: color 0.2s ease-in-out;
 }
@@ -1681,7 +1704,7 @@ a {
 
 .adv__text {
   margin: 0;
-  font: 40 16px / 180% "Muller", sans-serif;
+  font: 400 16px / 180% "Muller", sans-serif;
   color: #fff;
 }
 
@@ -1701,56 +1724,35 @@ a {
 }
 
 .adv__link {
-  position: relative;
-  margin-left: 13px;
-  padding-left: 28px;
-  font: 500 20px / 100% "Muller", sans-serif;
-  color: #F0D288;
-  background: url("../img/yandex-market.svg") left center no-repeat;
-  z-index: 5;
-  transition: color 0.2s ease-in-out,
-              background 0.2s ease-in-out;
-}
-
-.adv__link::before {
-  content: "";
-  position: absolute;
-  top: -25px;
-  right: -13px;
-  left: -13px;
-  bottom: -25px;
+  padding: 25px 13px 25px 38px;
   border: 2px solid #F0D288;
   border-radius: 100px;
-  transition: background-color 0.2s ease-in-out,
-              border-color 0.2s ease-in-out;
+  font: 500 20px / 100% "Muller", sans-serif;
+  color: #F0D288;
+  background: url("../img/yandex-market.svg") 10px center no-repeat;
+  z-index: 5;
+  transition: color 0.2s ease-in-out,
+              background 0.2s ease-in-out,
+              border-color 0.2s ease-in-out,
+              background-color 0.2s ease-in-out;
 }
 
 .adv__link:focus {
   color: #121723;
-}
-
-.adv__link:focus::before {
   background-color: #bb973e;
   z-index: -5;
 }
 
 .adv__link:hover {
-  color: #121723;
-}
-
-.adv__link:hover::before {
   background-color: #F0D288;
+  color: #121723;
   z-index: -5;
 }
 
 .adv__link:active {
-  color: #121723;
-  background: url("../img/yandex-market-active.svg") left center no-repeat;
-}
-
-.adv__link:active::before {
   border-color: #bb973e;
-  background-color: #bb973e;
+  color: #121723;
+  background: url("../img/yandex-market-active.svg") 10px center no-repeat #bb973e;
 }
 
 /*about*/

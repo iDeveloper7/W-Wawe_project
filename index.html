@@ -975,9 +975,11 @@
               </picture>
 
               <div class="broadcasts__article-bottom-wrap flex">
-                <h3 class="broadcasts__name subtitle">О&nbsp;людях и&nbsp;книгах</h3>
+                <div class="broadcasts__name-time-wrap">
+                  <h3 class="broadcasts__name subtitle">О&nbsp;людях и&nbsp;книгах</h3>
 
-                <time class="broadcasts__time">Анонсируется отдельно</time>
+                  <time class="broadcasts__time">Анонсируется отдельно</time>
+                </div>
 
                 <a href="#" class="broadcasts__more-link">Подробнее</a>
               </div>
@@ -993,9 +995,11 @@
               </picture>
 
               <div class="broadcasts__article-bottom-wrap flex">
-                <h3 class="broadcasts__name subtitle">Графомания td</h3>
+                <div class="broadcasts__name-time-wrap">
+                  <h3 class="broadcasts__name subtitle">Графомания td</h3>
 
-                <time class="broadcasts__time">По&nbsp;понедельникам в&nbsp;10:00</time>
+                  <time class="broadcasts__time">По&nbsp;понедельникам в&nbsp;10:00</time>
+                </div>
 
                 <a href="#" class="broadcasts__more-link">Подробнее</a>
               </div>
@@ -1011,9 +1015,11 @@
               </picture>
 
               <div class="broadcasts__article-bottom-wrap flex">
-                <h3 class="broadcasts__name subtitle">Не&nbsp;Рим, не&nbsp;Троя</h3>
+                <div class="broadcasts__name-time-wrap">
+                  <h3 class="broadcasts__name subtitle">Не&nbsp;Рим, не&nbsp;Троя</h3>
 
-                <time class="broadcasts__time">По&nbsp;вторникам в&nbsp;12:00</time>
+                  <time class="broadcasts__time">По&nbsp;вторникам в&nbsp;12:00</time>
+                </div>
 
                 <a href="#" class="broadcasts__more-link">Подробнее</a>
               </div>
@@ -1029,9 +1035,11 @@
               </picture>
 
               <div class="broadcasts__article-bottom-wrap flex">
-                <h3 class="broadcasts__name subtitle">Эрудит</h3>
+                <div class="broadcasts__name-time-wrap">
+                  <h3 class="broadcasts__name subtitle">Эрудит</h3>
 
-                <time class="broadcasts__time">По&nbsp;пятницам в&nbsp;17:00</time>
+                  <time class="broadcasts__time">По&nbsp;пятницам в&nbsp;17:00</time>
+                </div>
 
                 <a href="#" class="broadcasts__more-link">Подробнее</a>
               </div>
@@ -1047,9 +1055,11 @@
               </picture>
 
               <div class="broadcasts__article-bottom-wrap flex">
-                <h3 class="broadcasts__name subtitle">Тонкости эпох</h3>
+                <div class="broadcasts__name-time-wrap">
+                  <h3 class="broadcasts__name subtitle">Тонкости эпох</h3>
 
-                <time class="broadcasts__time">По&nbsp;субботам в&nbsp;10:00</time>
+                  <time class="broadcasts__time">По&nbsp;субботам в&nbsp;10:00</time>
+                </div>
 
                 <a href="#" class="broadcasts__more-link">Подробнее</a>
               </div>
@@ -1065,9 +1075,11 @@
               </picture>
 
               <div class="broadcasts__article-bottom-wrap flex">
-                <h3 class="broadcasts__name subtitle">Живые мысли</h3>
+                <div class="broadcasts__name-time-wrap">
+                  <h3 class="broadcasts__name subtitle">Живые мысли</h3>
 
-                <time class="broadcasts__time">По&nbsp;воскресеньям в&nbsp;15:30</time>
+                  <time class="broadcasts__time">По&nbsp;воскресеньям в&nbsp;15:30</time>
+                </div>
 
                 <a href="#" class="broadcasts__more-link">Подробнее</a>
               </div>
@@ -1413,7 +1425,7 @@
             </div>
           </li>
 
-          <li class="accordion__item">
+          <li class="accordion__item historians">
             <h3 class="accordion__title subtitle">
               <button class="accordion__btn flex" data-btnpath="five">
                 <span class="accordion__btn-text">Историки</span>
@@ -1716,8 +1728,8 @@
       <div class="playlists__left-wrap">
         <h2 class="playlists__title section-title">Плейлисты</h2>
 
-        <form class="playlists__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
-          <fieldset>
+        <form class="playlists__form" action="#" method="post">
+          <fieldset class="playlists__swiper">
             <legend class="playlists__legend">Жанр</legend>
 
             <ul class="playlists__list list-reset">
@@ -1785,6 +1797,42 @@
                 </label>
               </li>
             </ul>
+
+<!--            <div class="playlists__swiper">-->
+              <ul class="playlists__list-genre swiper-wrapper list-reset flex">
+                <li class="playlists__item-genre swiper-slide">
+                  <button class="playlists__btn-genre">Постпанк</button>
+                </li>
+
+                <li class="playlists__item-genre swiper-slide">
+                  <button class="playlists__btn-genre">Хардкор</button>
+                </li>
+
+                <li class="playlists__item-genre swiper-slide">
+                  <button class="playlists__btn-genre">Панк&#8209;рок</button>
+                </li>
+
+                <li class="playlists__item-genre swiper-slide">
+                  <button class="playlists__btn-genre">Рок</button>
+                </li>
+
+                <li class="playlists__item-genre swiper-slide">
+                  <button class="playlists__btn-genre">Прогрессивный&nbsp;рок</button>
+                </li>
+
+                <li class="playlists__item-genre swiper-slide">
+                  <button class="playlists__btn-genre">Электронная&nbsp;музыка</button>
+                </li>
+
+                <li class="playlists__item-genre swiper-slide">
+                  <button class="playlists__btn-genre">Классическая&nbsp;музыка</button>
+                </li>
+
+                <li class="playlists__item-genre swiper-slide">
+                  <button class="playlists__btn-genre">Звуки&nbsp;природы&nbsp;и&nbsp;шум&nbsp;города</button>
+                </li>
+              </ul>
+<!--            </div>-->
           </fieldset>
         </form>
 

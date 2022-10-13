@@ -197,6 +197,16 @@ playlistsPauseBtn.forEach(function (btn) {
   })
 })
 
+//swiper (playlists section mobile version)
+
+const swiperPlaylists = new Swiper('.playlists__swiper', {
+  slidesPerView: 'auto',
+  loop: false,
+  freeMode: true,
+  spaceBetween: 15,
+  autoHeight: true,
+})
+
 //swiper (about section)
 
 let swiper = new Swiper('.swiper', {
